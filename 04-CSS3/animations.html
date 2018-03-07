@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Animations</title>
+
+    <style>
+        .box {
+            width: 150px;
+            border: 2px solid #000;
+            background-color: rgb(18, 108, 192);
+            position: absolute;
+            padding: 5px;
+            color: #fff;
+            font-weight: bold;
+            font-family: Tahoma;
+            margin: 50px;
+        }
+
+        /* Sürekli animasyonun tekrar edilmesini sağlar. */
+        /* @keyframes boyutlandir {
+            from { width: 150px; }
+            to { width: 250px; }
+        } */
+
+        /* Animasyon tek sefer çalışır. */
+        /* @keyframes boyutlandir {
+            0% { width: 150px; }
+            25% { width: 175px; }
+            50% { width: 200px; }
+            75% { width: 225px; }
+            100% { width: 250px; }
+        } */
+
+        @keyframes boyutlandir {
+            0% { width: 150px; background-color:rgba(18, 108, 192, 1.0); }
+            25% { width: 175px; background-color:rgba(18, 108, 192, 0.750); }
+            50% { width: 200px; background-color:rgba(18, 108, 192, 0.500); }
+            75% { width: 225px; background-color:rgba(18, 108, 192, 0.250); }
+            100% { width: 250px; background-color:rgba(18, 108, 192, 0.0); }
+        } 
+
+         /* @-webkit-keyframes boyutlandir {
+            0% { width: 150px; background-color:rgba(18, 108, 192, 1.0); }
+            25% { width: 175px; background-color:rgba(18, 108, 192, 0.750); }
+            50% { width: 200px; background-color:rgba(18, 108, 192, 0.500); }
+            75% { width: 225px; background-color:rgba(18, 108, 192, 0.250); }
+            100% { width: 250px; background-color:rgba(18, 108, 192, 0.0); }
+        }  */
+
+        .box:hover {
+            animation-name: boyutlandir;    /* Animasyon adı */
+            animation-duration: 4s;         /* Animasyon süresi */
+
+            /* Animasyon gecikmesi */
+            /* animation-delay: 2s; */
+
+            /* Animasyon tekrar sayısı */
+            animation-iteration-count: 3;  /* animasyonun tekrar sayısı, infinite(sonsuz)  */
+            
+            /* Animasyon yönü; normal, reverse, alternate, alternate-reverse */
+            /* animation-direction: reverse; */
+
+            /* Animasyon zamanlama yöntemi */
+            /* animation-timing-function: linear; */
+
+            /* Kısa yazımı */
+            /* animation: boyutlandir 4s linear 2s 3 reverse; */
+
+
+
+
+            /* Diğer tarayıcı destekleri için */
+            /*
+            -webkit-animation-name: boyutlandir;
+            -webkit-animation-duration: 4s;
+            -webkit-animation-delay: 2s;
+            -webkit-animation-iteration-count: 3;
+            -webkit-animation-direction: reverse;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation: boyutlandir 4s linear 2s 3 reverse;
+
+            -moz-animation-name: boyutlandir;
+            -moz-animation-duration: 4s;
+            -moz-animation-delay: 2s;
+            -moz-animation-iteration-count: 3;
+            -moz-animation-direction: reverse;
+            -moz-animation-timing-function: linear;
+            -moz-animation: boyutlandir 4s linear 2s 3 reverse;
+
+            -o-animation-name: boyutlandir;
+            -o-animation-duration: 4s;
+            -o-animation-delay: 2s;
+            -o-animation-iteration-count: 3;
+            -o-animation-direction: reverse;
+            -o-animation-timing-function: linear;
+            -o-animation: boyutlandir 4s linear 2s 3 reverse;
+            */
+            
+
+            /* Animate CSS */
+            /* https://daneden.github.io/animate.css/ */
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box">
+        Lorem ipsum
+    </div>
+
+
+</body>
+
+</html>

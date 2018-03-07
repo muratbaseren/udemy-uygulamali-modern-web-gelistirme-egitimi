@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Traversing</title>
+    <script src="libs\jquery321\jquery-3.2.1.min.js"></script>
+
+    <style>
+        .bold {
+            font-weight: bold;
+        }
+
+        .italic {
+            font-style: italic;
+        }
+
+        .underline {
+            text-decoration: underline;
+        }
+
+        .color {
+            color: rgb(4, 196, 36);
+        }
+
+        .bg {
+            background-color: darkslateblue;
+        }
+
+        .list-item {
+            border: 2px dashed darkgrey;
+            padding: 5px;
+            margin: 3px;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        li{
+            width: 200px;
+            cursor:pointer;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <button type="button">Reset</button>
+    <hr>
+
+    <ul id="options">
+        <li>Bold Ayarı</li>
+        <li>Italic Ayarı</li>
+        <li>Underline Ayarı</li>
+        <li>Color Ayarı</li>
+        <li>Background Ayarı</li>
+    </ul>
+
+
+    <script>
+
+        var ulChildren = $("#options").children();
+
+        ulChildren.each(function (i, e) {
+            $(e).addClass("list-item");
+        });
+
+        $("#options li").eq(0).click(function () {
+            $(this).toggleClass("bold");
+        });
+
+        $("#options li").eq(1).click(function () {
+            $(this).toggleClass("italic");
+        });
+
+        $("#options li").eq(2).click(function () {
+            $(this).toggleClass("underline");
+        });
+
+        $("#options li").eq(3).click(function () {
+            $(this).toggleClass("color");
+        });
+
+        $("#options li").eq(4).click(function () {
+            $(this).toggleClass("bg");
+        });
+
+        $("#options").parent().find("button:first").click(function () {
+            $("#options").find("li").attr("class", "list-item");
+        });
+
+        // var ul = $("hr").next();
+        // var btn = $("hr").prev();
+
+    </script>
+
+</body>
+
+</html>

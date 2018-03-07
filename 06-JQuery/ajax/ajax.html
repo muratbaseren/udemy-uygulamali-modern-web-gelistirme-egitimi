@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+    <script src="..\libs\jquery321\jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+    <div>
+        <p>Bir HTML içeriği bir elementin içerisine yüklemeyi sağlar.</p>
+        <button id="btnLoad">Load HTML</button>
+        <button id="btnClearHtml">Clear HTML</button>
+    </div>
+
+    <div>
+        <p>Bir Ajax GET isteğinde bulunur.</p>
+        <button id="btnGet">Get Top 10 Posts</button>
+    </div>
+
+    <div>
+        <p>Bir Ajax POST ile veri gönderim isteğinde bulunur.</p>
+        <input type="text" placeholder="title" id="txtTitle">
+        <input type="text" placeholder="text" id="txtText">
+        <button id="btnPost">Post Article</button>
+    </div>
+
+    <div>
+        <p>Bir Ajax metodu ile GET ve POST isteğinde bulunur.</p>
+        <button id="btnAjaxGet">Ajax Get Top 10 Post</button>
+        <button id="btnAjaxPost">Ajax Post Article</button>
+    </div>
+
+    <div>
+        <ul id="list">
+
+        </ul>
+    </div>
+
+    <script>
+
+        var url = "http://127.0.0.1:8081/";
+
+        $("#btnLoad").click(function () {
+
+            $("#list").load(url, function (data, status) {
+
+                if (status == "success") {
+                    console.log("HTML yüklendi..");
+                }
+
+                if (status == "error") {
+                    var li = $("<li></li>");
+                    li.text("Hata oluştu..");
+                    $("#list").append(li);
+                }
+
+            });
+
+        });
+
+
+        $("#btnClearHtml").click(function () {
+            $("#list").empty();
+        });
+
+        var root = "https://jsonplaceholder.typicode.com";
+        var ul = $("#list");
+
+        $("#btnGet").click(function () {
+
+            $.get(root + "/posts", function (data, status) {
+
+                if (status == "success") {
+                    for (var i = 0; i < 10; i++) {
+
+                        var li = $("<li></li>");
+                        li.text(data[i].title);
+                        ul.append(li);
+                    }
+                }
+
+            });
+
+        });
+
+
+        $("#btnPost").click(function () {
+
+            var d = {
+                "title": $("#txtTitle").val(),
+                "body": $("#txtText").val()
+            };
+
+            $.post(root + "/posts", d, function (data, status) {
+
+                if (status == "success") {
+                    var li = $("<li></li>");
+                    li.text(data.title + " - " + data.body);
+                    ul.append(li);
+                }
+
+            });
+
+        });
+
+
+        $("#btnAjaxGet").click(function(){
+
+            $.ajax({
+                method : "GET",
+                url : root + "/posts"
+            }).done(function(data){
+
+                for (var i = 0; i < 10; i++) {
+                    var li = $("<li></li>");
+                    li.text(data[i].title);
+                    ul.append(li);
+                }
+
+            }).fail(function(){
+
+                var li = $("<li></li>");
+                li.text("Hata oluştu..");
+                $("#list").append(li);
+
+            })
+
+        });
+
+
+        $("#btnAjaxPost").click(function(){
+
+            $.ajax({
+                method : "POST",
+                url : root + "/posts",
+                data : {
+                    "title":$("#txtTitle").val(),
+                    "body":$("#txtText").val(),
+                }
+            }).done(function(data){
+
+                var li = $("<li></li>");
+                li.text(data.title + "-" + data.body);
+                ul.append(li);
+
+            }).fail(function(){
+
+                var li = $("<li></li>");
+                li.text("Hata oluştu..");
+                $("#list").append(li);
+
+            })
+
+        });
+
+
+    </script>
+
+</body>
+
+</html>

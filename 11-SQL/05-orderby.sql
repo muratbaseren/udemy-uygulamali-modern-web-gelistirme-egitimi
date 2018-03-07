@@ -1,0 +1,7 @@
+SELECT * 
+FROM Users
+ORDER BY Age ASC --DESC
+
+SELECT * 
+FROM Users
+ORDER BY Age ASC, Salary DESC

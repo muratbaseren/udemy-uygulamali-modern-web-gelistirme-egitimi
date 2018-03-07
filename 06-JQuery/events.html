@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Events</title>
+    <script src="libs\jquery321\jquery-3.2.1.min.js"></script>
+
+</head>
+
+<body>
+
+    <p id="p1">P1-Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse in illo atque, at deserunt quibusdam quod. Autem nostrum
+        tempora placeat atque libero quos, velit blanditiis voluptatibus quisquam similique id reprehenderit!</p>
+
+    <p class="paraf">Paraf-Explicabo corporis molestiae odit veritatis quos excepturi a cumque minus! Voluptas delectus molestias vitae laudantium
+        consectetur deserunt iste omnis laborum? Consequuntur soluta ea a ipsam saepe explicabo dignissimos unde fuga?</p>
+
+    <p>Empty-Dicta magni quas aperiam, maiores exercitationem cumque, unde et cum quibusdam assumenda dolorem laborum est quod
+        hic libero. Illum voluptas similique recusandae temporibus. Veniam excepturi provident totam, aspernatur blanditiis
+        quam.</p>
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Illum, recusandae qui.</li>
+        <li>Deserunt, harum facilis.</li>
+    </ul>
+
+    <ul class="liste">
+        <li>Lorem, ipsum dolor.</li>
+        <li>Illum, recusandae qui.</li>
+        <li>Deserunt, harum facilis.</li>
+    </ul>
+
+    <script>
+
+        // $("#p1").click(function(){ 
+        //     // alert("p1 elementi tıklandı.");
+        //     // $("#p1").hide();
+        //     // $(this).hide();
+        // });
+
+        $("p").click(function(){
+            $(this).hide();
+        });
+
+        $("li").dblclick(function(){
+            $(this).fadeOut();
+        });
+
+    </script>
+
+</body>
+
+</html>

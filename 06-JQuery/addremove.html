@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add and Remove Methods</title>
+    <script src="libs\jquery321\jquery-3.2.1.min.js"></script>
+</head>
+
+<body>
+
+    <input type="text" id="todoText" placeholder="todo text" />
+    <button id="btnAddAppend">Liste Sonuna Ekle</button>
+    <button id="btnAddPrepend">Liste Başına Ekle</button>
+    <hr>
+
+    <h4>Todo List</h4>
+    <ul id="todoList">
+
+    </ul>
+
+    <hr>
+
+    <input type="text" id="todoText2" placeholder="todo text" />
+    <button id="btnAddBefore">Öncesine Ekle</button>
+    <button id="btnAddAfter">Sonrasına Ekle</button>
+
+    <h4>Todo List</h4>
+    <ul id="todoList2">
+        <li id="item1">Lorem, ipsum dolor.</li>
+        <li id="item2">Illo, commodi accusantium!</li>
+        <li id="item3">Magni, beatae quos!</li>
+    </ul>
+
+    <script>
+
+        $("#btnAddBefore").click(function () {
+            var li = $("<li></li>");
+            li.text($("#todoText2").val());
+
+            $("#todoList2 #item2").before(li);
+        });
+
+        $("#btnAddAfter").click(function () {
+            var li = $("<li></li>");
+            li.text($("#todoText2").val());
+
+            $("#todoList2 #item2").after(li);
+        });
+
+
+        $("#btnAddAppend").click(function () {
+            var li = $("<li></li>");
+            li.text($("#todoText").val());
+
+            $("#todoList").append(li);
+        });
+
+        $("#btnAddPrepend").click(function () {
+            var li = $("<li></li>");
+            li.text($("#todoText").val());
+
+            $("#todoList").prepend(li);
+        });
+
+    </script>
+
+</body>
+
+</html>

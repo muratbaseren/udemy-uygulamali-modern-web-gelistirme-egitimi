@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Get and Set Methods</title>
+    <script src="libs\jquery321\jquery-3.2.1.min.js"></script>
+
+
+
+</head>
+
+<body>
+
+    <button id="btnGetHtml">Get Html</button>
+    <button id="btnGetText">Get Text</button>
+    <button id="btnGetValue">Get Value</button>
+    <hr>
+
+    <button id="btnSetHtml">Set Html</button>
+    <button id="btnSetText">Set Text</button>
+    <button id="btnSetValue">Set Value</button>
+    <hr>
+
+    <p>
+        <b>Lorem ipsum dolor</b> sit amet consectetur adipisicing elit. Repellendus nulla, sequi non possimus doloribus id!</p>
+
+    <input type="text" value="" />
+
+    <hr>
+    <select id="cities">
+        <option value="34">İstanbul</option>
+        <option value="06">Ankara</option>
+        <option value="35">İzmir</option>
+    </select>
+
+    <button id="btnGetSelectedCity">Get Selected City</button>
+
+    <hr>
+    <input type="radio" name="cinsiyet" value="bay">
+    <span>Bay</span>
+    <input type="radio" name="cinsiyet" value="bayan">
+    <span>Bayan</span>
+    <button id="btnGetSelectedCinsiyet">Get Selected Cinsiyet</button>
+
+    <hr>
+    <input type="checkbox" name="musictype" value="rock">
+    <span>Rock</span>
+    <input type="checkbox" name="musictype" value="jazz">
+    <span>Jazz</span>
+    <button id="btnGetSelectedMusicType">Get Selected Music Type</button>
+
+    <script>
+
+        $("#btnGetSelectedMusicType").click(function () {
+            var selectList = $("input[name='musictype']:checked");
+
+            // for (var i = 0; i < selectList.length; i++) {
+            //     var selected = selectList[i];
+            //     var val = $(selected).val();
+            //     console.log(val);
+            // }
+
+            $("input[name='musictype']:checked").each(function (index, element) {
+                console.log($(element).val());
+            });
+
+        });
+
+        $("#btnGetSelectedCinsiyet").click(function () {
+            var val = $("input[name='cinsiyet']:checked").val();
+            console.log(val);
+        });
+
+        $("#btnGetSelectedCity").click(function () {
+            var val = $("#cities").val();
+            console.log(val);
+        });
+
+
+        $("#btnGetHtml").click(function () {
+            var val = $("p").html();
+            console.log(val);
+        });
+
+        $("#btnGetText").click(function () {
+            var val = $("p").text();
+            console.log(val);
+        });
+
+        $("#btnGetValue").click(function () {
+            var val = $("input[type='text']").val();
+            console.log(val);
+        });
+
+
+        $("#btnSetHtml").click(function () {
+            $("p").html("<b>Murat</b> Başeren");
+        });
+
+        $("#btnSetText").click(function () {
+            $("p").text("Murat Başeren");
+        });
+
+        $("#btnSetValue").click(function () {
+            $("input[type='text']").val("Murat Başeren");
+        });
+
+    </script>
+
+</body>
+
+</html>

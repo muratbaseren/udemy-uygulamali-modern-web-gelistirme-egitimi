@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menulist" aria-expanded="false">
+                    <span class="sr-only">Menü</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="HomePage.html">My Shop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menulist">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="register.html">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Kayıt Ol
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;Giriş
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Profil
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="myprofile.html">Profil Görüntüle</a></li>
+                            <li><a href="addresses.html">Adreslerim</a></li>
+                            <li><a href="orders.html">Siparişlerim</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Sepetim
+                            <span class="badge">3</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="product.html">Ürün 1</a></li>
+                            <li><a href="product.html">Ürün 2</a></li>
+                            <li><a href="product.html">Ürün 3</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="cart.html">Sepete Git</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-envelope"></span>&nbsp;Mesajlar
+                            <span class="badge">2</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="message.html">Mesaj 1</a></li>
+                            <li><a href="message.html">Mesaj 2</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="messages.html">Mesajlara Git</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signout.html">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp;Çıkış
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- CTRL + SHIFT + W : Browser da sayfayı açar.. -->
+    <!-- ALT + SHIFT + W : Seçileni element içine alır.. -->
+
+    <div class="container">
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h3>Siparişler</h3>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+
+                <table class="table table-condensed table-striped table-hover text-center">
+
+                    <thead>
+                        <tr>
+                            <th class="text-center">Sipariş Tarihi</th>
+                            <th class="text-center">Sipariş No</th>
+                            <th class="text-center">Durumu</th>
+                            <th class="text-center">Tutar</th>
+                            <th class="text-center"></th>
+                        </tr>
+                    </thead>
+
+                    <tbody>
+
+                        <tr>
+                            <td>10.02.2008</td>
+                            <td>ABDB6E62-2E1A</td>
+                            <td>Gönderilmedi.</td>
+                            <td>50.00 ₺</td>
+                            <td>
+                                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#messagebox1">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#messagebox2">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10.02.2008</td>
+                            <td>ABDB6E62-2E1A</td>
+                            <td>Gönderildi</td>
+                            <td>75.00 ₺</td>
+                            <td>
+                                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#messagebox1">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#messagebox2">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>10.02.2008</td>
+                            <td>ABDB6E62-2E1A</td>
+                            <td>İptal Edildi.</td>
+                            <td>75.00 ₺</td>
+                            <td>
+                                <button class="btn btn-info btn-xs" data-toggle="modal" data-target="#messagebox1">
+                                    <span class="glyphicon glyphicon-eye-open"></span>
+                                </button>
+                                <button class="btn btn-danger btn-xs" data-toggle="modal" data-target="#messagebox2">
+                                    <span class="glyphicon glyphicon-remove"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+
+                </table>
+
+            </div>
+        </div>
+
+        <div class="modal fade" id="messagebox1" tabindex="-1" role="dialog" aria-labelledby="messagebox-label">
+            <div class="modal-dialog modal-sm" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="messagebox-label">Sipariş Detayları</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="http://placehold.it/75x75" class="img-responsive img-thumbnail">
+                                </div>
+                                <div class="col-md-6">
+                                    <div><b>Ürün 1</b></div>
+                                    <div>2 Adet</div>
+                                    <div>22.00 ₺</div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <img src="http://placehold.it/75x75" class="img-responsive img-thumbnail">
+                                </div>
+                                <div class="col-md-6">
+                                    <div><b>Ürün 2</b></div>
+                                    <div>3 Adet</div>
+                                    <div>28.00 ₺</div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="modal fade" id="messagebox2" tabindex="-1" role="dialog" aria-labelledby="messagebox-label">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="messagebox-label">Sipariş İptali</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident eligendi, placeat enim.
+                        </div>
+
+                        <div class="form-group">
+                            <textarea cols="30" rows="5" name="reason" id="reason" placeholder="İptal Sebebiniz" class="form-control"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <form action="#" method="post">
+                            <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+
+                            <input type="hidden" id="orderid" name="orderid" value="ABDB6E62-2E1A" />
+
+                            <button type="submit" class="btn btn-danger" data-dismiss="modal">
+                                <span class="glyphicon glyphicon-remove"></span> Sipariş İptal
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="well navbar-fixed-bottom">
+        <div class="row">
+
+            <div class="col-md-4 col-md-offset-4 text-center">
+
+                <a href="http://www.facebook.com" target="_blank">
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                </a>
+
+                <a href="http://www.twitter.com" target="_blank">
+                    <span class="fa fa-twitter-square fa-2x"></span>
+                </a>
+
+                <a href="http://www.youtube.com" target="_blank">
+                    <span class="fa fa-youtube-square fa-2x text-danger"></span>
+                </a>
+
+            </div>
+
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p>
+                    Tüm Hakları Saklıdır.&copy; 2017
+                </p>
+                <p>
+                    <a href="mailto:mail@mailcom" class="btn btn-info btn-sm">E-Posta Gönder</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

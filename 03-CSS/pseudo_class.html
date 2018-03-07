@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pseudo-Class</title>
+
+    <style>
+    
+        div{
+            margin: 10px;
+        }
+
+       a{
+           border:2px solid #494949;
+           background-color: #fff;
+           padding: 5px;
+           font-size: 16pt;
+           font-weight: bold;
+           text-decoration: none;
+           color:#000;
+       }
+
+       a:hover{
+          background-color:#494949;
+          color:#fff;  
+       }
+
+       input[type="text"]{
+           border:2px solid #ddd;
+        border-radius: 5px;
+        padding: 10px;
+       }
+
+       input[type="text"]:focus{
+           border-color:red;
+           box-shadow: 0px 0px 5px red;
+       }
+
+       li:first-child{
+           font-weight: bold;
+       }
+
+       li:last-child{
+           color:red;
+       }
+
+       li:nth-child(2) {
+            text-decoration: underline;
+       }
+
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <a href="#">Click Me!</a>
+    </div>
+
+    <div>
+        <input type="text" placeholder="type a message" />
+    </div>
+
+    <hr>
+    
+    <ul>
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+            <p>Aut, qui officia.</p>
+        </li>
+        <li>
+            <p>Eius, beatae delectus.</p>
+        </li>
+    </ul>
+
+    <ol>
+        <li>
+            <p>Lorem, ipsum dolor.</p>
+        </li>
+        <li>
+            <p>Molestiae, saepe et.</p>
+        </li>
+        <li>
+            <p>Eligendi, accusantium pariatur.</p>
+        </li>
+    </ol>
+
+</body>
+</html>

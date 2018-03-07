@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Flexbox</title>
+
+    <style>
+
+        .container{
+            display: flex;
+
+            /* dikey eksende alt elementleri listeler */
+            /* flex-direction: column; */
+
+            /* yatay eksende alt elementleri listeler */
+            flex-direction: row;
+
+            /* yatay eksende alt elementleri tersten listeler */
+            /* flex-direction: row-reverse; */
+
+            /* sığmayan elementleri devam eden sıradan dizmeye devam eder. */
+            flex-wrap: wrap; /* => nowrap, wrap-reverse, row wrap  */
+
+            /* sıraları ortalar */
+            /* justify-content: center; */
+
+            /* sıraları sıra sonuna yaslar */
+            /* justify-content: flex-end; */
+
+            /* sıraları sıra başına yaslar */
+            /* justify-content: flex-start; */
+
+            /* alt elementleri eşit boşluklar ile sıralar */
+            /* justify-content: space-around; */
+
+            /* alt elementleri eşit boşluklar ile sıralar fakat ilk element ile son elementi sıra başına ve sonuna yaslar */
+            /* justify-content: space-between; */
+
+            /* her sıra içindeki elementleri dikey olarak ortalar. */
+            /* height: 500px;
+            align-items: center;
+            align-items: flex-start;
+            align-items: flex-end; */
+
+            /* sıralar arasında eşit boşluk yapar ama justify gibi satıra yaymaz. */
+            /* align-content: space-between; */
+            /* align-content: space-around;    /* satır etrafına eşit boşluk ekler */
+            /* align-content: flex-start; */
+            /* align-content: flex-end; */
+
+            /* yatay da ve dikeyde tam ortalanmış */
+            /* height: 500px;            
+            justify-content: center;
+            align-items: center; */
+        }
+
+        .box{
+            width:75px;
+            height: 75px;
+            line-height: 75px;
+            display: block;
+            text-align: center;
+            vertical-align: middle;
+            border:2px solid #000;
+            background-color: rgb(18, 108, 192); 
+            padding: 5px;
+            color:#fff;
+            font-weight: bold;
+            font-size: 8pt;
+            font-family: Tahoma;
+            margin: 5px;
+        }
+
+    </style>
+
+</head>
+
+<body>
+
+    <div class="container">
+        <div class="box">Lorem.</div>
+        <div class="box">Perspiciatis?</div>
+        <div class="box">Vitae.</div>
+        <div class="box">Est?</div>
+        <div class="box">Ratione?</div>
+        <div class="box">Corporis?</div>
+        <div class="box">Repudiandae!</div>
+        <div class="box">Doloremque.</div>
+        <div class="box">Corporis?</div>
+        <div class="box">Repudiandae!</div>
+        <div class="box">Doloremque.</div>
+    </div>
+
+</body>
+
+</html>

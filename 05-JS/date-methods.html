@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Tarih Metotları</title>
+
+    <script>
+    
+        var bugun = new Date();
+
+        // alert(bugun.getDate()); // 1-31 arasında tarihin gün değeri.
+        // alert(bugun.getDay());  // 0-6 gunun haftanın hangi gunu oldugunu verir.
+        // alert(bugun.getFullYear())  // yılı verir.
+        // alert(bugun.getHours());    // saati verir.
+        // alert(bugun.getMinutes());    // dakikayı verir.
+        // alert(bugun.getSeconds());    // saniyeyi verir.
+        // alert(bugun.getMilliseconds());    // milisaniyeyi verir.
+        // alert(bugun.getMonth());    // 0-11 arasında ay değerini verir.
+
+        var tarihFormatim = 
+            bugun.getDate() + "." + (bugun.getMonth()+1) + "." + bugun.getFullYear();
+
+        tarihFormatim += 
+            " " + bugun.getHours() + ":" + bugun.getMinutes() + ":" + bugun.getSeconds();
+
+        alert(tarihFormatim);
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Try-Catch(Hata Yönetimi)</title>
+
+    <script>
+    
+        function metodum(){
+            console.log("metodum kodu çalıştı.");
+        }
+
+        try {
+            // Hata olması ön görülen kodlar..
+            metodum();
+
+            var sayi1 = 10;
+            var sayi2 = 0;
+
+            if(sayi2 == 0) {
+                throw 'sayi2 değeri "0" olamaz.';
+            }
+        } 
+        catch(hata) {
+            // Hata oluşursa yakaladığımız blok..
+            console.log("Hata oluştu.");
+
+            if(hata.name != undefined) console.log(hata.name);
+            if(hata.message != undefined) console.log(hata.message); 
+
+            console.log(hata);   
+            alert(hata);
+        }
+
+        var mesaj = "Hello JS!";
+        console.log(mesaj);
+    
+    </script>
+
+</head>
+<body>
+    
+</body>
+</html>

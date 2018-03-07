@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Border-Radius</title>
+
+    <style>
+        #box1 {
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -o-border-radius: 25px;
+            border-radius: 25px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #box2 {
+            -webkit-border-radius: 25px;
+            -moz-border-radius: 25px;
+            -o-border-radius: 25px;
+            border-radius: 25px;
+            border: 2px solid #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #box3 {
+            /* border-bottom-left-radius: 25px; */
+            border-radius: 5px 10px 15px 20px;
+            border: 2px solid #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="box1">Border-radius Box1 !</div>
+    <hr>
+    <div id="box2">Border-radius Box2 !</div>
+    <hr>
+    <div id="box3">Border-radius Box3 !</div>
+</body>
+
+</html>

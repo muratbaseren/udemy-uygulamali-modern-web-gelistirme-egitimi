@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manupulasyonu - 3</title>
+
+    <script>
+
+        function page_onload() {
+            var tUrl = document.getElementById("txtUrl");
+            tUrl.value = "";
+            tUrl.placeholder = "http://...";
+
+            var tName = document.getElementById("txtName");
+            tName.setAttribute("value", "");
+            tName.setAttribute("placeholder", "google");
+
+        }
+
+        function btnAdd_click() {
+            var tUrl = document.getElementById("txtUrl");
+            var tName = document.getElementById("txtName");
+
+            var li = document.createElement("li");
+            var a = document.createElement("a");
+            a.href = tUrl.value;
+            a.target = "_blank";
+            a.innerText = tName.value;
+
+            li.appendChild(a);
+
+            var ul = document.getElementById("linkList");
+            ul.appendChild(li);
+        }
+
+    </script>
+
+</head>
+
+<body onload="page_onload();">
+    <input type="text" id="txtUrl" />
+    <input type="text" id="txtName" />
+    <button type="button" id="btnAdd" onclick="btnAdd_click();">Add</button>
+    <hr>
+
+    <ul id="linkList">
+
+    </ul>
+
+</body>
+
+</html>

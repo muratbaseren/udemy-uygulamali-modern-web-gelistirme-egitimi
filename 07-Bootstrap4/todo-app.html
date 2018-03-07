@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Font Awesome CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="#">Sample Todo App</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menu">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">
+                        <span class="fa fa-home"></span> Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" data-toggle="modal" data-target="#modalAddNew">
+                        <span class="fa fa-plus"></span> Add New Item
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlLists" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-list"></span> Lists
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlLists">
+                        <a class="dropdown-item" href="#">
+                            <span class="fa fa-list"></span> Completed</a>
+                        <a class="dropdown-item" href="#">
+                            <span class="fa fa-list"></span> Todos</a>
+                    </div>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">
+                    <span class="fa fa-search"></span> Search
+                </button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 class="display-4">Home Page</h1>
+            </div>
+            <div class="col-md-12">
+                <h3>Todo List</h3>
+                <hr>
+                <div class="row">
+                    <div id="todoList" class="col-md-12">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <span class="form-control text-danger">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum quos. Dolores!
+                            </span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox" checked>
+                                </div>
+                            </div>
+                            <span class="form-control text-success">
+                                <del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum quos. Dolores!</del>
+                            </span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <span class="form-control text-danger">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum quos. Dolores!
+                            </span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox" checked>
+                                </div>
+                            </div>
+                            <span class="form-control text-success">
+                                <del>Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum quos. Dolores!</del>
+                            </span>
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <div class="input-group-text">
+                                    <input type="checkbox">
+                                </div>
+                            </div>
+                            <span class="form-control text-danger">
+                                Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, ipsum quos. Dolores!
+                            </span>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <!-- Modal -->
+    <div class="modal fade" id="modalAddNew" tabindex="-1" role="dialog" aria-labelledby="modalTitle" aria-hidden="true" data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="modalTitle">
+                        <span class="fa fa-plus-circle"></span> Add New Item
+                    </h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                            <label for="task" class="col-form-label">Task:</label>
+                            <input type="text" class="form-control" id="task">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">
+                        <span class="fa fa-close"></span> Close
+                    </button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        <span class="fa fa-save"></span> Save
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+
+        $(".modal button.btn-success").click(function () {
+            var taskStr = $("#task").val();
+            var listitem = $("<div class='input-group mb-3'> <div class='input-group-prepend'> <div class='input-group-text'> <input type='checkbox'> </div> </div> <span class='form-control text-danger'></span> </div>");
+
+            listitem.find("input[type='checkbox']").change(function(){
+                checkbox_change($(this));
+            });
+
+            listitem.find("span.text-danger").text(taskStr);
+            $("#todoList").append(listitem);
+        });
+
+        function checkbox_change(chk) {
+            var span = chk.parent().parent().next();
+
+            if (chk.is(":checked") == true) {
+                span.html("<del>" + span.text() + "</del>");
+            } else {
+                span.html(span.text());
+            }
+
+            span.toggleClass("text-success");
+            span.toggleClass("text-danger");
+        }
+
+        $("input[type='checkbox']").change(function () {
+            checkbox_change($(this));
+        });
+
+        $('#modalAddNew').on('show.bs.modal', function (e) {
+            $(this).find("#task").val("");
+            $(this).find("#task").focus();
+        });
+
+
+    </script>
+
+</body>
+
+</html>

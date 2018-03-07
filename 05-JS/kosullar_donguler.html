@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Koşullar ve Döngüler</title>
+
+    <script>
+
+        var yas = 67;
+
+        function yasKontrol(deger){
+
+            if(deger < 18){
+                alert("Genç");
+            } else if( deger >= 18 && deger < 41) {
+                alert("Yetişkin");
+            } else if( deger >= 41 && deger < 65) {
+                alert("Orta Yaşlı");
+            } else {
+                alert("Yaşlı");
+            }
+        }
+
+        // yasKontrol(yas);
+
+        var ad = "";
+        var soyad = "Başeren";
+
+        function adSoyadKontrol(adi, soyadi) {
+
+            if(adi == "" && soyadi == "") {
+                alert("Adınızı ve soyadınızı boş geçemezsiniz.");
+            } else if(adi == "" || soyadi == "") {
+                //alert("Adınız ya da soyadınız boş geçilemez.");
+
+                if(adi == "") {
+                    alert("Adınızı boş geçemezsiniz.");
+                } else if(soyadi == "") {
+                    alert("Soyadınızı boş geçemezsiniz.");                    
+                }
+            }
+
+        }
+
+        // adSoyadKontrol(ad,soyad);
+
+        if(ad != "") {
+            alert("Harika, adınızı girmişsiniz.");
+        }
+
+
+        // DÖNGÜLER
+
+        var i = 5;
+
+        // Şart sağlandıkça dön.
+        // while(i < 8){
+        //     alert(i);
+        //     i = i + 1;
+        // }
+
+        // En az 1 kere çalış ama şart sağlandıkça dön.
+        // do {
+        //     alert(i);
+        //     i = i + 1;
+        // } while(i < 8)
+
+        // koşul sağlandıkça döner.
+        for(var sayac = 0; sayac < 4; sayac++){
+            alert(sayac);
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Koşullar ve Döngüler</h2>
+    <ul>
+        <li>if-elseif yapısı</li>
+        <li>Do-While döngüsü</li>
+        <li>For döngüsü</li>
+    </ul>
+
+</body>
+
+</html>

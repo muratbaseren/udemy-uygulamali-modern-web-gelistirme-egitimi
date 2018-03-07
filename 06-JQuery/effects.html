@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Effects</title>
+    <script src="libs\jquery321\jquery-3.2.1.min.js"></script>
+
+    <style>
+    
+        /* p{
+            position: absolute;
+        } */
+
+    </style>
+
+    <script>
+
+        $(function () {
+
+            $("#hide").click(function () {
+                $("p").hide(2000);
+            });
+
+            $("#show").click(function () {
+                $("p").show(2000);
+            });
+
+            $("#toggle").click(function () {
+                $("p").toggle(2000);
+            });
+
+            $("#stop").click(function () {
+                $("p").stop();
+            });
+
+
+            // $("#fadein").click(function () {
+            //     $("p").fadeIn(1000);
+            // });
+
+            // $("#fadeout").click(function () {
+            //     $("p").fadeOut(1000);
+            // });
+
+            // $("#fadetoggle").click(function () {
+            //     $("p").fadeToggle(1000);
+            // });
+
+
+            // $("#slideUp").click(function () {
+            //     $("p").slideUp(1000);
+            // });
+
+            // $("#slideDown").click(function () {
+            //     $("p").slideDown(1000);
+            // });
+
+            // $("#slideToggle").click(function () {
+            //     $("p").slideToggle(1000);
+            // });
+
+
+            // $("#animate").click(function () {
+            //     $("p").animate({
+            //         "left":"+=250px"    
+            //     }, 2000, function(){
+            //         alert("Animasyon bitti.");
+            //     });
+            // });
+        });
+
+
+    </script>
+
+</head>
+
+<body>
+
+    <button id="hide">Hide</button>
+    <button id="show">Show</button>
+    <button id="toggle">Toogle</button>
+    <button id="stop">Stop</button>
+
+    <!-- <button id="fadein">FadeIn</button>
+    <button id="fadeout">FadeOut</button>
+    <button id="fadetoggle">FadeToogle</button> -->
+
+    <!-- <button id="slideUp">slideUp</button>
+    <button id="slideDown">slideDown</button>
+    <button id="slideToggle">slideToggle</button> -->
+
+    <!-- <button id="animate">Animate</button> -->
+
+    <hr>
+
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore temporibus consequuntur ullam soluta aspernatur blanditiis?</p>
+
+    <p>Laboriosam, similique blanditiis. Quisquam temporibus perferendis deserunt dolore dolorem eius tempore dolorum quis doloribus
+        harum!</p>
+
+    <p>Ullam quia sint voluptates dolores, dolore illo. Harum aut sint similique consequuntur voluptas odio veniam.</p>
+
+
+</body>
+
+</html>

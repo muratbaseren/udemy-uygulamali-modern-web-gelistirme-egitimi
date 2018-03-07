@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Popover</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script> -->
+    <script src="node_modules/popperjs/popper.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+
+    <div class="text-success" id="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque laboriosam excepturi, sit voluptas in eveniet.
+    </div>
+
+    <button class="btn btn-success" data-toggle="popover" data-container="#box" title="Hello Sir!" data-content="Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum magni recusandae, deserunt minima rerum ab?">
+        Click Me!
+    </button>
+
+    <span class="d-inline-block" data-toggle="popover" data-trigger="hover" data-content="Disabled popover">
+        <button class="btn btn-primary" style="pointer-events: none;" type="button" disabled>Disabled button</button>
+    </span>
+
+    <script>
+
+        $("[data-toggle='popover']").popover();
+
+        // $("[data-toggle='popover']").popover({
+        //     container:"#box"
+        // });
+
+    </script>
+
+</body>
+
+</html>

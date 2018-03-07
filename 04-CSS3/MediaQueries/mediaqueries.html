@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Media Queries</title>
+
+    <style>
+        @media screen and (max-width: 450px) {
+            body {
+                color: red;
+            }
+        }
+
+        @media screen and (min-width: 450px) and (max-width: 550px) {
+            body {
+                color: green;
+            }
+        }
+
+        @media screen and (min-width: 550px) and (max-width: 650px) {
+            body {
+                color: yellow;
+            }
+        }
+
+        @media screen and (min-width: 650px) {
+            body {
+                color: purple;
+            }
+        }
+
+        @media print {
+            body {
+                color: aqua;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolorum tempora non consequuntur corrupti quasi a animi
+            ratione voluptatum eum suscipit perspiciatis unde nihil, quaerat quo iusto. Ullam provident ipsum modi.</p>
+    </div>
+</body>
+
+</html>

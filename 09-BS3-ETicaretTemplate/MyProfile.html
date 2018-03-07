@@ -1,0 +1,237 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menulist" aria-expanded="false">
+                    <span class="sr-only">Menü</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="HomePage.html">My Shop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menulist">
+                <ul class="nav navbar-nav">
+                    <li><a href="#">Link 1</a></li>
+                    <li><a href="#">Link 2</a></li>
+                    <li><a href="#">Link 3</a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="register.html">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Kayıt Ol
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;Giriş
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Profil
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="myprofile.html">Profil Görüntüle</a></li>
+                            <li><a href="addresses.html">Adreslerim</a></li>
+                            <li><a href="orders.html">Siparişlerim</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Sepetim
+                            <span class="badge">3</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="product.html">Ürün 1</a></li>
+                            <li><a href="product.html">Ürün 2</a></li>
+                            <li><a href="product.html">Ürün 3</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="cart.html">Sepete Git</a></li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-envelope"></span>&nbsp;Mesajlar
+                            <span class="badge">2</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li><a href="message.html">Mesaj 1</a></li>
+                            <li><a href="message.html">Mesaj 2</a></li>
+                            <li class="divider" role="separator"></li>
+                            <li><a href="messages.html">Mesajlara Git</a></li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signout.html">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp;Çıkış
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <!-- CTRL + SHIFT + W : Browser da sayfayı açar.. -->
+    <!-- ALT + SHIFT + W : Seçileni element içine alır.. -->
+
+    <div class="container">
+
+
+
+        <div class="row">
+            <div class="col-md-12">
+                <h2>Profil Sayfası</h2>
+                <hr />
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <center><img src="http://placehold.it/150x150" class="img-circle img-responsive img-thumbnail" /></center>
+            </div>
+            <div class="col-md-8 well">
+
+                <div class="form-group">
+
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 text-danger">Name : </label>
+                    <label class="col-md-10">Murat</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 text-danger">Surname : </label>
+                    <label class="col-md-10">Başeren</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 text-danger">E-Mail : </label>
+                    <label class="col-md-10">kadirmuratbaseren@gmail.com</label>
+                </div>
+
+                <div class="form-group">
+                    <label class="col-md-2 text-danger">Bio : </label>
+                    <label class="col-md-10">
+                        Ipsum gravida vel pretium tellus tincidunt integer eu augue augue nunc elit dolor, luctus placerat scelerisque euismod, iaculis eu lacus nunc mi elit, vehicula ut.
+                    </label>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-10 col-md-offset-1 text-right">
+                <a href="#" class="btn btn-warning" data-toggle="modal" data-target="#messagebox">
+                    <span class="glyphicon glyphicon-edit"></span> Edit
+                </a>
+
+                <a href="#" class="btn btn-danger">
+                    <span class="glyphicon glyphicon-trash"></span> Delete
+                </a>
+            </div>
+            <div class="col-md-12">
+                &nbsp;
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="messagebox" tabindex="-1" role="dialog" aria-labelledby="messagebox-label">
+        <form action="#" method="post">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                        <h4 class="modal-title" id="messagebox-label">Profil Düzenle</h4>
+                    </div>
+                    <div class="modal-body">
+
+                        <div class="form-group">
+                            <input type="text" name="name" id="name" placeholder="Name" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="text" name="surname" id="surname" placeholder="Surname" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="editemail" id="editemail" placeholder="E-Mail Address" class="form-control" />
+                        </div>
+
+                        <div class="form-group">
+                            <textarea cols="30" rows="5" name="editbio" id="editbio" placeholder="Bio" class="form-control"></textarea>
+                        </div>
+
+                    </div>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Kapat</button>
+
+                        <button type="submit" class="btn btn-warning" data-dismiss="modal">
+                            <span class="glyphicon glyphicon-floppy-save"></span> Kaydet
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+
+    <div class="well navbar-fixed-bottom">
+        <div class="row">
+
+            <div class="col-md-4 col-md-offset-4 text-center">
+
+                <a href="http://www.facebook.com" target="_blank">
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                </a>
+
+                <a href="http://www.twitter.com" target="_blank">
+                    <span class="fa fa-twitter-square fa-2x"></span>
+                </a>
+
+                <a href="http://www.youtube.com" target="_blank">
+                    <span class="fa fa-youtube-square fa-2x text-danger"></span>
+                </a>
+
+            </div>
+
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p>
+                    Tüm Hakları Saklıdır.&copy; 2017
+                </p>
+                <p>
+                    <a href="mailto:mail@mailcom" class="btn btn-info btn-sm">E-Posta Gönder</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

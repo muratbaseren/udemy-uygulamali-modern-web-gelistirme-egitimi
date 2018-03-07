@@ -1,0 +1,197 @@
+<html>
+
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Bree Serif', serif;
+            margin: 0;
+            padding: 10px;
+        }
+
+        label {
+            display: inline-block;
+            width: 200px;
+            text-align: right;
+            padding-right: 20px;
+        }
+
+        input,
+        textarea {
+            display: inline-block;
+            width: 280px;
+        }
+
+        section>div,
+        section>form>div {
+            margin-bottom: 3px;
+        }
+
+        section.kayit {
+            display: inline-block;
+            width: 50%;
+            vertical-align: top;
+        }
+
+        section.yardim {
+            display: inline-block;
+            width: 40%;
+            vertical-align: top;
+            padding-left: 10px;
+        }
+
+        section.yardim ul {
+            padding: 0;
+            list-style-type: none;
+        }
+
+        h4 {
+            background-color: khaki;
+            padding: 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <header>
+        <h2>Kayıt Sayfası</h2>
+        <hr>
+    </header>
+    <section class="kayit">
+        <form action="#" autocomplete="off" novalidate="novalidate">
+            <header>
+                <h4>Kayıt Bilgileriniz</h4>
+            </header>
+            <div>
+                <label>Adınız : </label>
+                <input type="text" id="ad" placeholder="adınız">
+            </div>
+            <div>
+                <label>Soyadınız : </label>
+                <input type="text" id="soyad" placeholder="soyadınız">
+            </div>
+            <div>
+                <label>Doğum Tarihiniz : </label>
+                <input type="date" id="dogum_tarihi" placeholder="gg.aa.yyyy">
+            </div>
+            <div>
+                <label>E-Posta Adresiniz : </label>
+                <input type="email" id="eposta" placeholder="mail@mail.com">
+            </div>
+            <div>
+                <label>Telefonunuz : </label>
+                <input type="tel" id="telefon" placeholder="(555) 6665544">
+            </div>
+            <div>
+                <label>Yaşınız : </label>
+                <input type="number" id="yas" min="18" max="99" placeholder="30">
+            </div>
+            <div>
+                <label>Favori Renginiz : </label>
+                <input type="color" id="renk">
+            </div>
+            <div>
+                <label>Blog Adresiniz : </label>
+                <input type="url" id="blog_url" placeholder="http://muratbaseren.wordpress.com">
+            </div>
+            <div>
+                <hr>
+            </div>
+            <header>
+                <h4>Randevu Bilgileriniz</h4>
+            </header>
+            <div>
+                <label>Randevu Zamanınız : </label>
+                <input type="datetime-local" id="randevu_zamani">
+            </div>
+            <div>
+                <label>Bitiş Saatiniz : </label>
+                <input type="time" id="randevu_bitis">
+            </div>
+            <div>
+                <hr>
+            </div>
+            <header>
+                <h4>İzin Bilgileriniz</h4>
+            </header>
+            <div>
+                <label>İzin Ayınız : </label>
+                <input type="month" id="izin_ay">
+            </div>
+            <div>
+                <label>İzin Haftanız : </label>
+                <input type="week" id="izin_hafta">
+            </div>
+            <div>
+                <label>İzin Gün Talebiniz(<span id="gun_sayisi"></span>) : </label>
+                <input type="range" id="izin_gun" min="1" max="14" value="5" onchange="document.getElementById('gun_sayisi').innerText = this.value;">
+            </div>
+            <div>
+                <hr>
+            </div>
+            <header>
+                <h4>İkamet Bilgileriniz</h4>
+            </header>
+            <div>
+                <label>Adresiniz : </label>
+                <textarea id="adres" cols="30" rows="3" placeholder="abc cad. abc sk."></textarea>
+            </div>
+            <div>
+                <center>
+                    <br>
+                    <button type="reset">Sıfırla</button>
+                    <button type="submit">Gönder</button>
+                </center>
+            </div>
+        </form>
+    </section>
+    <section class="yardim">
+        <header>
+            <h4>Yardım</h4>
+        </header>
+        <form action="#">
+            <label>Arama : </label>
+            <input type="search" id="ara" placeholder="arama">
+            <button type="submit">Bul</button>
+        </form>
+        <div>
+            <div>
+                <hr>
+            </div>
+            <ul>
+                <li>
+                    <div><b>Lorem ipsum dolor.</b></div>
+                    <div>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Labore natus sunt modi quam blanditiis
+                            nesciunt nemo alias saepe, nulla repellendus maxime, quis tempore, atque accusamus!</p>
+                    </div>
+                </li>
+                <li>
+                    <div><b>Quas, quae voluptates.</b></div>
+                    <div>
+                        <p>Quae aliquid facere neque veritatis quidem tenetur dignissimos distinctio explicabo ratione velit
+                            vitae eius, sequi temporibus quasi, nam nisi alias aut iusto aspernatur suscipit. Quo.</p>
+                    </div>
+                </li>
+                <li>
+                    <div><b>Neque expedita, voluptatibus?</b></div>
+                    <div>
+                        <p>Quam eum rerum nisi, architecto cum ipsa culpa ipsum incidunt consectetur quibusdam, sint molestiae
+                            repellendus. Odit, rerum dignissimos illo autem dolor quo suscipit vero, delectus.</p>
+                    </div>
+                </li>
+                <li>
+                    <div><b>Amet, error, eaque?</b></div>
+                    <div>
+                        <p>Alias quisquam, deserunt tempore ad iusto ipsam fugiat iure vero in labore dolor, assumenda tempora
+                            voluptate. Sit vero laudantium optio esse voluptatum velit porro aspernatur.</p>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    </section>
+</body>
+<html>

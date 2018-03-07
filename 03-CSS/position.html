@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Positioning</title>
+
+    <style>
+    
+        div{
+            position: -webkit-sticky;
+            position: sticky;
+            border:2px solid #4FCE4F;
+            top: 10px;
+            left:50px;
+            background-color: greenyellow;
+        }
+
+        li{
+            display:inline-block;
+            border:2px solid green; 
+            margin-left:8px;
+            padding: 3px;
+            background-color: greenyellow;
+        }
+
+        li:nth-child(2){
+            position: relative;
+            left: 30px;
+            top:30px;
+        }
+
+
+        .abs{
+            position:relative;
+            display: block;
+            width: 300px;
+            height: 350px;
+        }
+
+        .paraf{
+            position: absolute;
+            top:20px;
+            right:20px;
+            border:2px solid red;
+            margin:0;
+            padding:0;
+        }
+
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="abs">
+        <p class="paraf">
+            Lorem ipsum dolor sit amet.
+        </p>
+    </div>
+
+    <ul>
+        <li>Lorem, ipsum dolor.</li>
+        <li>Repudiandae, et alias!</li>
+        <li>Sint, perspiciatis ex.</li>
+    </ul>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem saepe totam temporibus doloremque ipsum laborum! Dignissimos nostrum obcaecati voluptate voluptas consectetur, ducimus corrupti! Quaerat in facere debitis quidem asperiores.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem saepe totam temporibus doloremque ipsum laborum! Dignissimos nostrum obcaecati voluptate voluptas consectetur, ducimus corrupti! Quaerat in facere debitis quidem asperiores.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem saepe totam temporibus doloremque ipsum laborum! Dignissimos nostrum obcaecati voluptate voluptas consectetur, ducimus corrupti! Quaerat in facere debitis quidem asperiores.</p>
+
+    <div>
+        Ben static pozisyonluyum.
+    </div>
+
+    <p>
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque totam laudantium laboriosam quidem suscipit architecto voluptate, atque iure obcaecati fugit fuga, tempore perspiciatis, necessitatibus sequi.
+    </p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem saepe totam temporibus doloremque ipsum laborum! Dignissimos nostrum obcaecati voluptate voluptas consectetur, ducimus corrupti! Quaerat in facere debitis quidem asperiores.</p>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid autem saepe totam temporibus doloremque ipsum laborum! Dignissimos nostrum obcaecati voluptate voluptas consectetur, ducimus corrupti! Quaerat in facere debitis quidem asperiores.</p>
+
+</body>
+</html>

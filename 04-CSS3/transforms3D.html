@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 3D Transforms</title>
+
+    <style>
+        .box{
+            width:150px;
+            border:2px solid #000;
+            background-color: rgb(18, 108, 192); 
+            padding: 5px;
+            color:#fff;
+            font-weight: bold;
+            font-family: Tahoma;
+            margin: 50px;
+
+            transition: all 1s;
+        }
+
+        /* RotateX, RotateY, RotateZ - elementi X,Y ve Z ekseninde döndürür. */
+        .box:hover{
+            /* -webkit-transform: rotateX(150deg);
+            -moz-transform: rotateX(150deg);
+            -o-transform: rotateX(150deg); 
+            transform: rotateX(150deg); */
+
+            /* -webkit-transform: rotateY(150deg);
+            -moz-transform: rotateY(150deg);
+            -o-transform: rotateY(150deg); 
+            transform: rotateY(150deg); */
+
+            /* -webkit-transform: rotateZ(150deg);
+            -moz-transform: rotateZ(150deg);
+            -o-transform: rotateZ(150deg); 
+            transform: rotateZ(150deg); */
+
+            /* transform: rotateZ(150deg) rotateY(30deg) rotateX(20deg); */
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <div class="box">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo in adipisci non minima
+    </div>
+
+
+</body>
+</html>

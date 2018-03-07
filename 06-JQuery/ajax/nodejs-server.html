@@ -1,0 +1,20 @@
+<script>
+
+    var http = require("http");
+
+    http.createServer(function (request, response) {
+        response.setHeader("Access-Control-Allow-Origin","*");
+        response.writeHead(200, { 'Content-Type': 'text/html' });
+        
+        response.end('<li>Lorem ipsum dolor sit.</li>'
+        + '<li>Quos perferendis id optio!</li>'
+        + '<li>Nemo dignissimos impedit labore.</li>'
+        + '<li>Iste doloribus eos suscipit!</li>'
+        + '<li>Excepturi obcaecati impedit molestias!</li>');
+    }).listen(8081);
+
+    
+    console.log('Sunucu adresi : http://127.0.0.1:8081/');
+
+
+</script>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manupulasyonu - 1</title>
+
+    <script>
+
+        function onloaded() {
+
+            var p = document.getElementById("p1");
+
+            if (p != null) {
+                p.innerHTML = "Hello JS!";
+            }
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="onloaded();">
+    <p id="p1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugiat quos, enim consequatur debitis, nostrum tempora libero cumque
+        cupiditate officiis eaque hic exercitationem earum minus vel nobis laudantium aliquid iusto ipsa!
+    </p>
+
+
+    <!-- <script>
+        onloaded();
+    </script> -->
+</body>
+
+</html>

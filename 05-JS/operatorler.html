@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Operatörler ve Koşullar</title>
+
+    <script>
+
+        var sayi;
+        sayi = 20;
+        sayi = 21;
+
+        var adi = "Murat",
+            soyadi = "Başeren",
+            ikinciAdi = "Kadir";
+
+        // CTRL + K + D => Kod düzenlemeyi sağlar.
+
+        var a = 10;
+        var b = 15;
+        var toplam = a + b;
+        var fark = a - b;
+        var carpim = a * b;
+        var bolum = a / b;
+
+        // CTRL + K + C => Açıklama satırı yapar.
+        // CTRL + K + U => Açıklama satırını kaldırır.
+
+        // var msj = "Merhaba " + "JavaScript";
+        // alert(msj);
+
+        function karsilayici(kisiAdi, kisiSoyadi) {
+
+            if (kisiAdi == "") {
+                alert("Lütfen adınızı yazınız.");
+            } else if (kisiSoyadi == "") {
+                alert("Lütfen soyadınızı yazınız.");
+            } else {
+                var mesaj = "Hoşgeldiniz, " + kisiAdi + " " + kisiSoyadi;
+                alert(mesaj);
+            }
+
+        }
+
+        // karsilayici("Murat", "Başeren");
+        // karsilayici("Belinay","Başeren");
+
+        karsilayici("Murat", "Başeren");
+
+    </script>
+
+</head>
+
+<body>
+
+    <h2>Operatörler ve Koşullar</h2>
+    <ul>
+        <li>+,-,*,/ operatörleri</li>
+        <li>if-elseif yapısı</li>
+        <li>Temel konular tekrarı</li>
+    </ul>
+
+</body>
+
+</html>

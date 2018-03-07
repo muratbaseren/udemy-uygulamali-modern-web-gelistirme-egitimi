@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Bootstrap Components</title>
+
+    <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <script src="node_modules/popperjs/dist/popper.min.js"></script>
+
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                    <a class="nav-link" href="#">Home
+                        <span class="sr-only">(current)</span>
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true"
+                        aria-expanded="false">
+                        Dropdown
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+            </ul>
+            <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+            </form>
+        </div>
+    </nav>
+
+    <div class="container">
+
+        <!-- header -->
+        <!-- .row>.col-md-12>h2>lorem3^hr -->
+        <div class="row">
+            <div class="col-md-12">
+                <!-- <h2>Lorem, ipsum dolor.</h2>
+                <hr> -->
+                <div class="jumbotron">
+                    <h1 class="display-4">Hello, world!</h1>
+                    <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured
+                        content or information.</p>
+                    <hr class="my-4">
+                    <p class="lead">
+                        <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!-- content -->
+        <!-- .row>.col-md-3+.col-md-6+.col-md-3 -->
+        <div class="row text-center">
+
+            <!-- left side -->
+            <div class="col-md-3">
+                <h4 class="text-warning">Lorem, ipsum dolor.</h4>
+                <hr>
+                <div class="list-group">
+                    <a href="#" class="list-group-item list-group-item-action active">
+                        Cras justo odio
+                    </a>
+                    <a href="#" class="list-group-item list-group-item-action">Dapibus ac facilisis in</a>
+                    <a href="#" class="list-group-item list-group-item-action">Morbi leo risus</a>
+                    <a href="#" class="list-group-item list-group-item-action">Porta ac consectetur ac</a>
+                    <a href="#" class="list-group-item list-group-item-action disabled">Vestibulum at eros</a>
+                </div>
+                <p>
+                    <br>
+                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere saepe vel!
+                </p>
+            </div>
+
+            <!-- center side -->
+            <div class="col-md-6">
+                <h4 class="text-success">
+                    Lorem ipsum dolor sit amet consectetur.
+                </h4>
+                <hr>
+                <img class="img-fluid img-thumbnail" src="http://lorempixel.com/500/200/food" alt="">
+                <hr>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt blanditiis necessitatibus quae voluptate accusamus
+                    amet distinctio magnam reprehenderit dolores at! Fugit, laboriosam velit animi fugiat dolore non perspiciatis
+                    commodi quasi.</p>
+                <p>Unde corporis repellat fuga dolorem, impedit modi assumenda ipsum numquam saepe ut placeat, neque, illum
+                    temporibus eaque laudantium. Commodi perferendis tempora obcaecati quis doloribus minima, ab aliquam
+                    expedita reiciendis voluptatem.</p>
+                <p>Ipsam laboriosam ducimus tempore impedit sit ullam aperiam, corrupti, maxime delectus, eaque reprehenderit
+                    odio incidunt atque? Delectus sapiente impedit dolores debitis, sunt odio corrupti ex saepe corporis,
+                    praesentium suscipit laborum?</p>
+            </div>
+
+            <!-- right side -->
+            <div class="col-md-3">
+                <h4 class="text-info">Lorem, ipsum dolor.</h4>
+                <hr>
+                <div class="card" style="width: 18rem;">
+                    <img class="card-img-top" src="http://lorempixel.com/285/150/food" alt="Card image cap">
+                    <div class="card-body">
+                        <h5 class="card-title">Card title</h5>
+                        <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        <a href="#" class="btn btn-primary">Go somewhere</a>
+                    </div>
+                </div>
+                <p>
+                    <br>
+                    <br> Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum facere saepe vel!
+                </p>
+            </div>
+        </div>
+
+        <!-- footer -->
+        <!-- .row>.col-md-12>lorem5 -->
+        <div class="row">
+            <div class="col-md-12">
+                <hr>
+                <p class="text-center">
+                    <b>Lorem ipsum dolor sit amet. &copy;</b>
+                </p>
+            </div>
+        </div>
+        
+    </div>
+
+
+</body>
+
+</html>

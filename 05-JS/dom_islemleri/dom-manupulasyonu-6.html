@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manupulasyonu - 6</title>
+
+    <style>
+        div {
+            background-color: rgb(10, 148, 153);
+            border: 1px solid;
+            padding: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="div1">
+        <p id="p1">Click this paragraph, I am Bubbling.</p>
+    </div>
+    <br>
+
+    <div id="div2">
+        <p id="p2">Click this paragraph, I am Capturing.</p>
+    </div>
+
+    <script>
+        document.getElementById("p1").addEventListener("click", function () {
+            alert("You clicked the P1 element!");
+        }, false);  // useCapture
+
+        document.getElementById("div1").addEventListener("click", function () {
+            alert("You clicked the DIV1 element!");
+        }, false);
+
+        document.getElementById("p2").addEventListener("click", function () {
+            alert("You clicked the P2 element!");
+        }, true);
+
+        document.getElementById("div2").addEventListener("click", function () {
+            alert("You clicked the DIV2 element!");
+        }, true);
+    </script>
+
+</body>
+
+</html>

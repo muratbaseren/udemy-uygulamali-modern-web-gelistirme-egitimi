@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table</title>
+
+    <style>
+        
+        th{
+            background-color: #2FB62F;
+            color:#fff;
+            padding: 3px;
+        }
+
+        td{
+            text-align: center;
+            font-size: 9pt;
+            padding: 3px;
+        }
+
+        table{
+            border-collapse: collapse;
+        }
+
+        table, th, td{
+            border:1px solid #BBBBBB;
+        }
+
+        tr:hover{
+            background-color: #ddd;
+            cursor: pointer;
+        }
+
+/* çift indexli satırlar */
+        tr:nth-child(even){
+            background-color: #E4E4E4;
+        }
+
+/* tek index'li satırlar */
+        tr:nth-child(odd){
+            background-color: #FFFFB4;
+        }
+
+    </style>
+
+</head>
+<body>
+    
+    <table>
+
+        <thead>
+            <tr>
+                <th>Lorem</th>
+                <th>Omnis</th>
+                <th>Voluptati</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+            <tr>
+                <td>Lorem, ipsum.</td>
+                <td>Cum, assumenda?</td>
+                <td>Ea, nobis.</td>
+            </tr>
+            <tr>
+                <td>Nesciunt, error?</td>
+                <td>Sequi, adipisci?</td>
+                <td>Temporibus, fugiat.</td>
+            </tr>
+            <tr>
+                <td>At, aut.</td>
+                <td>Maiores, neque.</td>
+                <td>Natus, laborum!</td>
+            </tr>
+            <tr>
+                <td>Inventore, quae!</td>
+                <td>Asperiores, totam.</td>
+                <td>Nobis, explicabo?</td>
+            </tr>
+            <tr>
+                <td>Iure, repellendus!</td>
+                <td>Maxime, neque!</td>
+                <td>Odio, ipsa.</td>
+            </tr>
+
+        </tbody>
+
+    </table>
+
+</body>
+</html>

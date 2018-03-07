@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manupulasyonu - 4</title>
+
+    <script>
+
+        // function btnMake_click(){
+        //     console.log("asasa");
+        // }
+
+        function page_load() {
+
+            var btn = document.getElementById("btnMake");
+            btn.onclick = function () {
+
+                var parafs = document.getElementsByTagName("p");
+
+                for (var i = 0; i < parafs.length; i++){
+                    var p = parafs[i];
+                    p.innerText = "Hello JS! (paragraph : " + i + ")";
+                }
+
+            };
+
+        }
+
+    </script>
+
+</head>
+
+<body onload="page_load();">
+
+    <button id="btnMake" type="button">Change</button>
+    <hr>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Asperiores repudiandae praesentium maiores qui, dolor eveniet
+        vitae architecto, aliquid quo in voluptas dignissimos illum modi, repellat porro iste deleniti at aspernatur.</p>
+
+    <p>Est tempore enim tempora unde quos. Magnam impedit saepe perferendis inventore ipsum soluta alias veniam? Sed odio minus
+        ipsum laborum aut. Quas in dolores nam aspernatur distinctio? Voluptatibus, voluptatum? Sint.</p>
+
+    <p>Aliquid placeat dolor laudantium quae consequatur odit sequi dolorem architecto consequuntur recusandae ducimus cupiditate
+        temporibus vitae, commodi necessitatibus error quia amet fuga optio, blanditiis laborum sed. Ducimus eaque facilis
+        in.</p>
+
+</body>
+
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Text</title>
+
+    <style>
+        p.test1 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: clip;
+        }
+
+        p.test2 {
+            white-space: nowrap;
+            width: 200px;
+            border: 1px solid #000000;
+            overflow: hidden;
+            text-overflow: ellipsis;
+        }
+
+        p.test3 {
+            width: 11em;
+            border: 1px solid #000000;
+            word-wrap: break-word;
+        }
+
+        p.test4 {
+            width: 140px;
+            border: 1px solid #000000;
+            word-break: keep-all;
+        }
+
+        p.test5 {
+            width: 140px;
+            border: 1px solid #000000;
+            word-break: break-all;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>
+        <b>text-overflow: clip:</b>
+    </p>
+    <p class="test1">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laborum, laboriosam.
+    </p>
+
+    <hr>
+
+    <p>
+        <b>text-overflow: ellipsis:</b>
+    </p>
+    <p class="test2">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque, voluptatibus.
+    </p>
+
+    <hr>
+    
+    <p>
+        <b>word-wrap: break-word;</b>
+    </p>
+    <p class="test3">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci, praesentium itaque minus sint suscipit labore aperiam
+        fuga. Nisi dicta incidunt ad blanditiis aliquam quo, eveniet veniam soluta, repellat voluptas delectus!
+    </p>
+
+    <hr>
+
+    <p>
+        <b>word-break: keep-all;</b>
+    </p>
+    <p class="test4">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Possimus beatae alias modi numquam reprehenderit ipsa?
+    </p>
+
+    <hr>
+
+    <p>
+        <b>word-break: break-all;</b>
+    </p>
+    <p class="test5">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Explicabo, voluptatum laboriosam eveniet iure voluptate repudiandae.
+    </p>
+
+</body>
+
+</html>

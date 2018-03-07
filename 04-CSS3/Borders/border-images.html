@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Border-Images</title>
+
+    <style>
+        .box1 { 
+            border: 10px solid transparent;
+            padding: 15px;
+            width: 68px;
+            -webkit-border-image: url(border.png) 30 round; /* Safari 3.1-5 */
+            -o-border-image: url(border.png) 30 round; /* Opera 11-12.1 */
+            border-image: url(border.png) 30 round;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    </div>
+</body>
+
+</html>

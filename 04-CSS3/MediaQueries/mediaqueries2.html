@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Media Queries</title>
+
+    <style>
+        .col {
+            color: #fff;
+            float: left;
+            margin: 2%;
+            width: 40%;
+            padding: 10px;
+        }
+
+        .box1 {
+            background-color: #e95b33;
+            box-shadow: 2px 2px 5px #792e1a;
+        }
+
+        .box2 {
+            background-color: #40b7d7;
+            box-shadow: 2px 2px 5px #1b5a68;
+        }
+
+        footer{
+            clear: both;
+            padding-top: 30px;
+            text-align: right;
+            color:gray;
+            display: none;
+        }
+
+        @media screen and (max-width: 600px) {
+            body{
+                margin: 0;
+                padding: 0;
+            }
+
+            .col {
+                float: none;
+                margin: 0;
+                width: 100%;
+            }
+
+            .box1,.box2{
+                box-shadow:none;
+            }
+        }
+
+        @media print {
+            body{
+                margin: 0;
+                padding: 20px 50px 20px 50px;
+            }
+
+            .col {
+                float: none;
+                width: 100%;
+            }
+
+            .box1,.box2{
+                background-color: none;
+                box-shadow:none;
+            }
+
+            footer{
+                display: block;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div id="container">
+        <div class="row">
+            <div class="col box1">
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Curabitur
+                    blandit tempus porttitor. </p>
+            </div>
+            <div class="col box2">
+                <p>Nullam quis risus eget urna mollis ornare vel eu leo. Donec id elit non mi porta gravida at eget metus. Curabitur
+                    blandit tempus porttitor. </p>
+            </div>
+        </div>
+    </div>
+ <footer>
+        <p>
+            Tüm hakları saklıdır. &copy; Bu belge izinsiz dağıtılamaz.
+        </p>
+    </footer>
+   
+
+</body>
+
+</html>

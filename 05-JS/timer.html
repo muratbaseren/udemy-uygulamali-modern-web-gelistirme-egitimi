@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>SetTimeout &amp; SetInterval</title>
+
+    <script>
+
+        // SetInterval = belli bir sürede bir verilen fonksiyon ya da kodu çalıştırır.
+
+
+        var sayac = 0;
+
+        function metot1() {
+            var ul = document.getElementById("liste");
+            var li = document.createElement("li");
+
+            sayac++;
+            li.innerText = "item-" + sayac;
+
+            ul.appendChild(li);
+        }
+
+    </script>
+
+
+</head>
+
+<body>
+    <button id="btnStop" type="button">Stop Interval</button>
+    <button id="btnStartSetTimeout" type="button">Start Timeout</button>
+    <ul id="liste">
+
+    </ul>
+
+    <script>
+
+        var timer = setInterval(metot1, 1000);   //1000ms = 1sn
+
+        // setInterval(function(){
+        //     // çalışacak kodlar..
+        // },1000);
+
+        document.getElementById("btnStartSetTimeout").onclick = function(){
+            setTimeout(function(){
+                alert("SetTimeout ile kod çalıştırıldı.");
+                sayac = 0;
+            }, 2000);
+        };
+
+        document.getElementById("btnStop").onclick = function(){
+            clearInterval(timer);  
+        };
+
+    </script>
+
+</body>
+
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Class and CSS Methods</title>
+    <script src="libs\jquery321\jquery-3.2.1.min.js"></script>
+
+    <style>
+        .green {
+            color: green;
+            font-style: italic;
+        }
+
+        .red {
+            color: red;
+            font-style: italic;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div>
+        <button id="btnAddClass">Add Class</button>
+        <button id="btnRemoveClass">Remove Class</button>
+        <button id="btnToggleClass">Toggle Class</button>
+        <button id="btnCss">Custom CSS</button>
+    </div>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minima architecto facilis explicabo voluptates perferendis cupiditate
+        suscipit, magnam ratione pariatur dolorem laboriosam sed saepe consequuntur est laborum temporibus modi non ipsa!</p>
+
+    <script>
+
+        $("#btnAddClass").click(function () {
+            $("p").addClass("green");
+        });
+
+        $("#btnRemoveClass").click(function () {
+            $("p").removeClass("green");
+        });
+
+        $("#btnToggleClass").click(function () {
+            $("p").toggleClass("green");
+        });
+
+        $("#btnCss").click(function () {
+            $("p").css("color", "green");
+            
+            $("p").css({
+                "color": "green",
+                "fontStyle": "italic"
+            });
+        });
+
+    </script>
+
+</body>
+
+</html>

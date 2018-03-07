@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Object - JSON</title>
+
+    <script>
+
+        function onload() {
+
+            // var egitmen = {};
+            // egitmen.adi = "Murat";
+            // egitmen.soyadi = "Başeren";
+            // egitmen.yas = 33;
+
+            // Syntax = söz dizimine = Json = Javascript object notation
+            var egitmen = {
+                adi: "murat",
+                soyadi: "başeren",
+                yas: 33,
+                selamVer: function () {
+                    console.log("Merhaba Murat");
+                },
+                karsila: function (isim) {
+                    console.log("Merhaba " + isim);
+                },
+                bilgi : function(){
+                    console.log(this.adi + " " + this.soyadi + "(" + this.yas + ")");
+                }
+            };
+
+
+            egitmen.selamVer();
+            egitmen.karsila("Kadir");
+            egitmen.bilgi();
+
+            // console.log(egitmen.adi);
+            // console.log(egitmen.soyadi);
+            // console.log(egitmen.yas);
+            // console.log(egitmen.adi + " " + egitmen.soyadi);
+            // console.log(egitmen);
+
+            // egitmen.yas += 5;
+
+            // if(egitmen.yas < 40){
+            //     console.log("genç");
+            //     console.log(egitmen);
+            // }
+        }
+
+        onload();
+
+    </script>
+
+</head>
+
+<body>
+
+</body>
+
+</html>

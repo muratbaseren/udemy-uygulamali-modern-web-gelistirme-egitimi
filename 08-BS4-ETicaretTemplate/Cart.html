@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Meta Tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>E-Ticaret Örneği</title>
+
+    <!-- CSS Styles -->
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+    <link rel="stylesheet" href="node_modules\font-awesome\css\font-awesome.min.css">
+    <link rel="stylesheet" href="Content\site.css">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <!-- Javascripts -->
+    <script src="node_modules\jquery\dist\jquery.min.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+</head>
+
+<body>
+    <!-- navbar begin -->
+    <nav class="navbar navbar-expand-md navbar-light bg-light">
+        <a class="navbar-brand" href="HomePage.html">My Shop</a>
+        <button class="navbar-toggler hidden-lg-up" type="button" data-toggle="collapse" data-target="#collapsibleNavId" aria-controls="collapsibleNavId"
+            aria-expanded="false" aria-label="Menü"></button>
+        <div class="collapse navbar-collapse" id="collapsibleNavId">
+            <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 1</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 2</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Link 3</a>
+                </li>
+            </ul>
+            <ul class="navbar-nav navbar-right">
+                <li class="nav-item">
+                    <a class="nav-link" href="Register.html">
+                        <span class="fa fa-user-plus mr-2"></span>Kayıt Ol
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="Login.html">
+                        <span class="fa fa-sign-in mr-2"></span>Giriş
+                    </a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlProfile" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-user mr-2"></span>Profil
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlProfile">
+                        <a class="dropdown-item" href="MyProfile.html">Profil Görüntüle</a>
+                        <a class="dropdown-item" href="Addresses.html">Adreslerim</a>
+                        <a class="dropdown-item" href="Orders.html">Siparişlerim</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlCart" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-shopping-cart mr-2"></span>Sepetim
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlCart">
+                        <a class="dropdown-item" href="Product.html">Ürün 1</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 2</a>
+                        <a class="dropdown-item" href="Product.html">Ürün 3</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Cart.html">Sepete Git</a>
+                    </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="ddlMessages" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <span class="fa fa-envelope mr-2"></span>Mesajlar
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="ddlMessages">
+                        <a class="dropdown-item" href="Message.html">Mesaj 1</a>
+                        <a class="dropdown-item" href="Message.html">Mesaj 2</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="Messages.html">Mesajlar</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="HomePage.html">
+                        <span class="fa fa-sign-out mr-2"></span>Çıkış</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <!-- navbar end -->
+
+    <div class="container">
+
+        <!-- content begin -->
+        <div class="row mt-4">
+            <div class="col-md-12 my-4">
+                <h2>Sepetim</h2>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12">
+                <table class="table table-striped table-hover text-center table-sm">
+                    <thead>
+                        <tr>
+                            <th>Ürün Adı</th>
+                            <th>Birim Fiyatı</th>
+                            <th>Adedi</th>
+                            <th>Ara Toplam</th>
+                            <th></th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>
+                                Lorem, ipsum dolor.
+                            </td>
+                            <td>
+                                10.00 ₺
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                30.00 ₺
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                                <button class="btn btn-info btn-sm mr-4">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+
+                                <a class="btn btn-info btn-sm" href="Product.html" target="_blank">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lorem, ipsum dolor.
+                            </td>
+                            <td>
+                                10.00 ₺
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                30.00 ₺
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                                <button class="btn btn-info btn-sm mr-4">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+
+                                <a class="btn btn-info btn-sm" href="Product.html" target="_blank">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lorem, ipsum dolor.
+                            </td>
+                            <td>
+                                10.00 ₺
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                30.00 ₺
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                                <button class="btn btn-info btn-sm mr-4">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+
+                                <a class="btn btn-info btn-sm" href="Product.html" target="_blank">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Lorem, ipsum dolor.
+                            </td>
+                            <td>
+                                10.00 ₺
+                            </td>
+                            <td>
+                                3
+                            </td>
+                            <td>
+                                30.00 ₺
+                            </td>
+                            <td>
+                                <button class="btn btn-warning btn-sm">
+                                    <span class="fa fa-plus"></span>
+                                </button>
+                                <button class="btn btn-info btn-sm mr-4">
+                                    <span class="fa fa-minus"></span>
+                                </button>
+
+                                <a class="btn btn-info btn-sm" href="Product.html" target="_blank">
+                                    <span class="fa fa-eye"></span>
+                                </a>
+                                <button class="btn btn-danger btn-sm" data-toggle="modal" data-target="#deleteModal">
+                                    <span class="fa fa-trash"></span>
+                                </button>
+                            </td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td class="text-center text-danger">
+                                <h2>12</h2>
+                            </td>
+                            <td class="text-center text-danger">
+                                <h2>120.00 ₺</h2>
+                            </td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                </table>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-12 text-right">
+                <a href="#" class="btn btn-danger mr-4" data-target="#clearModal" data-toggle="modal">
+                    <span class="fa fa-trash mr-2"></span>Sepeti Boşalt
+                </a>
+                <a href="Payment.html" class="btn btn-success">
+                    <span class="fa fa-send mr-2"></span>Satın Al
+                </a>
+            </div>
+        </div>
+
+        <!-- content end -->
+
+    </div>
+
+    <!-- Modal Delete -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="deleteModalTitle">Ürün Çıkar</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 md-offset-1">
+                            <center>
+                                <span class="fa fa-trash text-danger fa-3x mr-2"></span>
+                            </center>
+                        </div>
+                        <div class="col-md-7 text-center">
+                            <p>Ürünü sepetinizden çıkarmak istediğinize emin misiniz?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <span class="fa fa-check mr-2"></span>Hayır</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        <span class="fa fa-close mr-2"></span>Evet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Clear -->
+    <div class="modal fade" id="clearModal" tabindex="-1" role="dialog" aria-labelledby="deleteModalTitle" aria-hidden="true"
+        data-backdrop="static">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="deleteModalTitle">Sepeti Boşalt</h4>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-md-4 md-offset-1">
+                            <center>
+                                <span class="fa fa-trash text-danger fa-3x mr-2"></span>
+                            </center>
+                        </div>
+                        <div class="col-md-7 text-center">
+                            <p>Sepetinizi boşaltmak istediğinize emin misiniz?</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-danger" data-dismiss="modal">
+                        <span class="fa fa-check mr-2"></span>Hayır</button>
+                    <button type="button" class="btn btn-success" data-dismiss="modal">
+                        <span class="fa fa-close mr-2"></span>Evet</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- footer begin -->
+    <div class="card card-default text-center fixed-bottom">
+        <div class="card-body">
+            <h5 class="card-title text-muted">My Shop Website</h5>
+            <div>
+                <a href="#" class="btn text-primary">
+                    <span class="fa fa-twitter fa-2x"></span>
+                </a>
+                <a href="#" class="btn text-danger">
+                    <span class="fa fa-instagram fa-2x"></span>
+                </a>
+                <a href="#" class="btn text-primary">
+                    <span class="fa fa-facebook fa-2x"></span>
+                </a>
+            </div>
+            <a href="mailto:abc@mail.com" class="btn btn-info btn-sm">
+                <span class="fa fa-at mr-2"></span>E-Posta Gönder
+            </a>
+        </div>
+        <div class="card-footer text-muted">
+            Designed By K.Murat Başeren &copy; 2018
+        </div>
+    </div>
+    <!-- footer end -->
+
+</body>
+
+</html>

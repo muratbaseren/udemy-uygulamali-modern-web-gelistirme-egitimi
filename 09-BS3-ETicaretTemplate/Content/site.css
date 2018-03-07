@@ -1,0 +1,131 @@
+﻿body {
+    /*padding-top: 50px;
+    padding-bottom: 20px;*/
+    font-family: 'Bree Serif', serif;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    /*padding-left: 15px;
+    padding-right: 15px;*/
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    /*max-width: 280px;*/
+}
+
+.width-xs{
+    width: 50px !important;
+}
+
+.width-sm{
+    width: 100px !important;
+}
+
+.width-md{
+    width: 150px !important;
+}
+
+.width-lg{
+    width: 200px !important;
+}
+
+.vertical-8px
+{
+    margin-top: -8px;
+}
+
+.well-empty {
+    background-color: #ffffff;
+}
+
+.well-info {
+    background-color: #5bc0de;
+}
+
+.well-success {
+    background-color: #4cae4c;
+}
+
+.well-danger {
+    background-color: #d9534f;
+}
+
+.well-primary {
+    background-color: #337ab7;
+}
+
+.well-warning {
+    background-color: #f0ad4e;
+}
+
+.mb-1{
+    margin-bottom: 1px;
+}
+
+.mb-2{
+    margin-bottom: 2px;
+}
+
+.mb-3{
+    margin-bottom: 3px;
+}
+
+.mb-4{
+    margin-bottom: 4px;
+}
+
+.mt-1{
+    margin-top: 1px;
+}
+
+.mt-2{
+    margin-top: 2px;
+}
+
+.mt-3{
+    margin-top: 3px;
+}
+
+.mt-4{
+    margin-top: 4px;
+}
+
+.mr-1{
+    margin-right: 1px;
+}
+
+.mr-2{
+    margin-right: 2px;
+}
+
+.mr-3{
+    margin-right: 3px;
+}
+
+.mr-4{
+    margin-right: 4px;
+}
+
+.ml-1{
+    margin-left: 1px;
+}
+
+.ml-2{
+    margin-left: 2px;
+}
+
+.ml-3{
+    margin-left: 3px;
+}
+
+.ml-4{
+    margin-left: 4px;
+}
+
+.shadow{
+    box-shadow : 0px 0px 8px #000;
+}

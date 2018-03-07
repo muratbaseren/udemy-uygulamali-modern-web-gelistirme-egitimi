@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ajax</title>
+    
+</head>
+<body>
+    <button id="btnAjax" type="button">Get Todo Items</button>
+    <ul id="list">
+
+    </ul>
+
+
+    <script>
+    
+        document.getElementById("btnAjax").onclick = function(){
+
+            var xhttp;
+
+            if(window.XMLHttpRequest){
+                // modern tarayıcı XMLHttpRequest desteği var.
+                xhttp = new XMLHttpRequest(); 
+            } else {
+                // eski tarayıcı..
+                xhttp = new ActiveXObject("Microsoft.XMLHTTP");
+            }
+
+            xhttp.onreadystatechange = function(){
+                // console.log(this.readyState);
+                // console.log(this.status);
+
+                if(this.readyState == 4 && this.status == 200){
+                    var json = JSON.parse(this.responseText);
+                    var ul = document.getElementById("list");
+
+                    for(var i = 0; i < json.length; i++)
+                    {
+                        var item = json[i];
+
+                        if(item.userId == 1){
+                            var li = document.createElement("li");
+                            li.innerText = item.title;
+                            
+                            if(item.completed == true){
+                                li.style.color = "green";
+                                li.style.textDecoration = "line-through";
+                            } else {
+                                li.style.color = "red";
+                            }
+
+                            ul.appendChild(li);
+                        }
+                    }
+
+                }
+
+            };
+
+            xhttp.open("GET", "https://jsonplaceholder.typicode.com/todos",true);
+            xhttp.send();
+
+        }; 
+    
+    </script>
+
+</body>
+</html>

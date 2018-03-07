@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Gradients</title>
+
+    <style>
+        .grdnt {
+            width: 400px;
+
+            /* Yukarı'dan aşağı doğru.. */
+            background: navy; /* Tarayıcı gradient desteklemiyorsa */
+            background: -webkit-linear-gradient(navy, yellow); /* Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(navy, yellow); /* Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(navy, yellow); /* Firefox 3.6 to 15 */
+            background: linear-gradient(navy, yellow); /* en sona yazılmalı */
+
+            /* Sol'dan sağa doğru.. */
+            background: navy; /* Tarayıcı gradient desteklemiyorsa */
+            background: -webkit-linear-gradient(left,navy , yellow); /* Safari 5.1 to 6.0 */
+            background: -o-linear-gradient(right, navy, yellow); /* Opera 11.1 to 12.0 */
+            background: -moz-linear-gradient(right, navy, yellow); /* Firefox 3.6 to 15 */
+            background: linear-gradient(to right, navy , yellow); /* en sona yazılmalı */
+
+            /*
+                css3 gradient generator
+                http://www.colorzilla.com/gradient-editor/
+                https://www.cssmatic.com/gradient-generator
+            */
+
+            background: rgba(252,234,187,1);
+            background: -moz-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 20%, rgba(248,181,0,1) 67%, rgba(255,255,255,1) 100%);
+            background: -webkit-gradient(left top, right top, color-stop(0%, rgba(252,234,187,1)), color-stop(20%, rgba(252,205,77,1)), color-stop(67%, rgba(248,181,0,1)), color-stop(100%, rgba(255,255,255,1)));
+            background: -webkit-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 20%, rgba(248,181,0,1) 67%, rgba(255,255,255,1) 100%);
+            background: -o-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 20%, rgba(248,181,0,1) 67%, rgba(255,255,255,1) 100%);
+            background: -ms-linear-gradient(left, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 20%, rgba(248,181,0,1) 67%, rgba(255,255,255,1) 100%);
+            background: linear-gradient(to right, rgba(252,234,187,1) 0%, rgba(252,205,77,1) 20%, rgba(248,181,0,1) 67%, rgba(255,255,255,1) 100%);
+            filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fceabb', endColorstr='#ffffff', GradientType=1 );
+
+
+            color:#fff;
+            padding: 15px;
+            border-radius: 25px;
+            text-align: justify;
+
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div class="grdnt">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ad dolores veritatis obcaecati totam nulla illum voluptatibus quos suscipit alias rerum! Dicta, ducimus nihil perspiciatis dignissimos voluptatibus rerum explicabo ea, reiciendis quisquam, quod labore amet a maiores inventore aliquam repudiandae?
+    </div>
+
+</body>
+
+</html>

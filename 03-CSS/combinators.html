@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Combinators</title>
+
+    <style>
+        
+        /* descendant(torun) selector */
+        div p{
+            font-weight: bold;
+        }
+
+        /* child(çocuk) selector */
+        div > p{
+            text-decoration: underline;
+        }
+
+        /* adjasent(bitişik) sibling selector */
+        div + p{
+            color:red;
+        }
+
+        /* general sibling selector */
+        div ~ p{
+            font-style: italic;
+        }
+
+        div.paragraph{
+            
+        }
+
+        div ul.list{
+
+        }
+
+        div ul li .paraf{
+            
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis, consequuntur culpa modi doloribus commodi delectus
+        aliquid autem pariatur quos, totam praesentium tempora, neque enim labore accusamus nam. Cum, officiis sint!</p>
+
+    <div>
+        <ul>
+            <li>
+                <p>
+                    Lorem, ipsum dolor.
+                </p>
+            </li>
+            <li>A, eveniet mollitia.</li>
+            <li>Animi, asperiores aliquam?</li>
+            <li>Asperiores, vero incidunt?</li>
+            <li>Reiciendis, repellat nobis?</li>
+        </ul>
+    </div>
+
+
+    <div class="paragraph">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Velit, error nesciunt? Blanditiis ab non nam quisquam dolore
+            porro ex optio velit. Necessitatibus vitae beatae dignissimos, minima optio quidem quis nesciunt.</p>
+    </div>
+
+    <p>Earum, amet optio! Blanditiis perspiciatis consequatur vitae ab minus distinctio ea, magnam inventore? Sunt optio ducimus
+        repellendus explicabo ab eius, nostrum cupiditate iure est quia eligendi id magni! Maiores, minus!</p>
+
+    <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptatum nesciunt, omnis voluptatibus repellendus, voluptates officiis quisquam, distinctio dolor minus cumque consequuntur maxime eius possimus atque aut recusandae natus animi. Nam.</p>
+
+
+</body>
+
+</html>

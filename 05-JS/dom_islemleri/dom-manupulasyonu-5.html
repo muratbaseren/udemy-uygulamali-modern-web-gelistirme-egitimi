@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>DOM Manupulasyonu - 5</title>
+
+    <script>
+
+        function txt_change() {
+            var t = document.getElementById("txtName");
+            alert(t.value.toUpperCase());
+        }
+
+        function btnAddEvent_click() {
+            var t = document.getElementById("txtName");
+            t.addEventListener("change", txt_change);
+
+            // t.onchange = txt_change;
+        }
+
+        function btnRemoveEvent_click() {
+            var t = document.getElementById("txtName");
+            t.removeEventListener("change", txt_change);
+        }
+
+    </script>
+
+</head>
+
+<body>
+
+    <input type="text" id="txtName" />
+    <button id="btnAddEvent" type="button" onclick="btnAddEvent_click();">Add Event</button>
+    <button id="btnRemoveEvent" type="button" onclick="btnRemoveEvent_click();">Remove Event</button>
+
+</body>
+
+</html>

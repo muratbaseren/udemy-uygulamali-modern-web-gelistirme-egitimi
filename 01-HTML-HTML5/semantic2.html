@@ -1,0 +1,243 @@
+<html>
+
+<head>
+    <title></title>
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+
+    <style>
+        body {
+            font-family: 'Bree Serif', serif;
+            margin: 0;
+            padding: 0;
+        }
+
+        nav {
+            padding-left: 60px;
+            background-color: #ddd;
+        }
+
+        nav a {
+            display: inline-block;
+            border: 0px solid gray;
+            background-color: #ddd;
+            color: #000;
+            font-weight: bold;
+            text-decoration: none;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: gray;
+        }
+
+        header {
+            padding-left: 60px;
+            padding-right: 60px;
+            padding-bottom: 20px;
+        }
+
+        article {
+            padding: 10px 20px;
+        }
+
+        article section {
+            margin: 10px;
+        }
+
+        article section header {
+            padding-left: 30;
+        }
+
+        article section header h3 {
+            color: maroon;
+        }
+
+        article section p {
+            padding: 0 30px;
+        }
+
+        #articles article {
+            display: inline-block;
+            width: 70%;
+        }
+
+        aside {
+            display: inline-block;
+            width: 25%;
+            vertical-align: top;
+        }
+
+        aside ul {
+            list-style: none;
+        }
+
+        aside ul li {
+            border: 1px solid gray;
+            background-color: #ddd;
+            display: block;
+            padding: 5px;
+            margin-bottom: 5px;
+        }
+
+        aside ul li:first-child {
+            display: block;
+            font-weight: bold;
+            background-color: #fff;
+            border-width: 0;
+            font-size: 16pt;
+        }
+
+        aside ul li:first-child:hover {
+            background-color: #fff;
+        }
+
+        aside ul li a {
+            color: #000;
+            text-decoration: none;
+        }
+
+        aside ul li:hover {
+            background-color: gray;
+            font-weight: bold;
+        }
+
+        footer {
+            border-top: 1px solid gray;
+            padding: 30px;
+            padding-bottom: 250px;
+            padding-top: 30px;
+            font-weight: bold;
+            background-color: #ddd;
+        }
+
+        details {
+            background-color: #ddd;
+            padding: 5px;
+            box-shadow: 2px 2px 3px gray;
+            border-radius: 3px;
+        }
+    </style>
+
+    <script>
+        function onload() {
+            var ab = document.getElementById("about");
+
+            ab.addEventListener("click",function(){
+                var dia = document.getElementsByTagName("dialog")[0];
+
+                if(dia.hasAttribute("open")){
+                    dia.removeAttribute("open");
+                }
+                else{
+                    dia.open = "open";
+                }
+            });
+        }
+    </script>
+
+</head>
+
+<body onload="onload();">
+    <nav>
+        <a href="#">Sayfa 1</a>&nbsp;
+        <a href="#">Sayfa 2</a>&nbsp;
+        <a href="#">Sayfa 3</a>&nbsp;
+    </nav>
+    <header>
+        <h1>
+            Lorem ipsum dolor.
+        </h1>
+        <hr>
+    </header>
+    <section id="articles">
+        <article>
+            <section class="intro">
+                <header>
+                    <h3>
+                        Lorem ipsum dolor sit.
+                    </h3>
+                </header>
+            </section>
+            <section class="content">
+                <details>
+                    <summary>
+                        Author info..
+                    </summary>
+                    <p>
+                        <b>K.Murat Başeren</b><br>
+                        <i><time>02.08.2017 22:56</time></i><br>
+                        <p>
+                            <b>Bio : </b>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, cupiditate magnam
+                            nemo officiis adipisci rerum.
+                        </p>
+                    </p>
+                </details>
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure vero cum laudantium odio aliquid doloremque,
+                    tenetur fugiat alias nemo reprehenderit dolores maiores praesentium fuga consectetur atque sed suscipit
+                    aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure vero cum laudantium
+                    odio aliquid doloremque, tenetur fugiat alias nemo reprehenderit dolores maiores praesentium fuga consectetur
+                    atque sed suscipit aliquam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure vero cum laudantium odio aliquid doloremque,
+                    tenetur fugiat alias nemo reprehenderit dolores maiores praesentium fuga consectetur atque sed suscipit
+                    aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure vero cum laudantium
+                    odio aliquid doloremque, tenetur fugiat alias nemo reprehenderit dolores maiores praesentium fuga consectetur
+                    atque sed suscipit aliquam.
+                </p>
+
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure vero cum laudantium odio aliquid doloremque,
+                    tenetur fugiat alias nemo reprehenderit dolores maiores praesentium fuga consectetur atque sed suscipit
+                    aliquam. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis iure vero cum laudantium
+                    odio aliquid doloremque, tenetur fugiat alias nemo reprehenderit dolores maiores praesentium fuga consectetur
+                    atque sed suscipit aliquam.
+                </p>
+            </section>
+            <section class="summary">
+                <p>
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Necessitatibus cum sapiente culpa, debitis cupiditate accusantium!
+                </p>
+                <p>
+                    Loremipsumdolorsitamet,consecteturadipisicingelit.Necessitatibuscumsapienteculpa,<wbr>debitiscupiditateaccusantium!Loremipsumdolorsitamet,consecteturadipisicingelit.Necessitatibuscumsapienteculpa,<wbr>debitiscupiditateaccusantium!
+                </p>
+                <p>
+                    <b>Derecelendirme :</b> <progress value="80" max="100"></progress>
+                </p>
+                <p>
+                    <hr>
+                    <span id="about">About article..</span>
+                    <dialog>
+                        Lorem ipsum <mark>dolor</mark> sit amet.
+                    </dialog>
+                    <hr>
+                </p>
+                <p>
+                    <b>Good : </b><meter value="8" min="0" max="10"></meter> (8)
+                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                    <b>Bad : </b><meter value="2" min="0" max="10"></meter> (2)
+                </p>
+            </section>
+        </article>
+        <aside>
+            <ul>
+                <li>
+                    <h4>Categories</h4>
+                </li>
+                <li><a href="#">Lorem ipsum.</a></li>
+                <li><a href="#">Nostrum, inventore.</a></li>
+                <li><a href="#">Consequatur, incidunt.</a></li>
+                <li><a href="#">Nisi, aliquam!</a></li>
+                <li><a href="#">Dolore, laborum.</a></li>
+            </ul>
+        </aside>
+    </section>
+    <footer>
+        <center>
+            Copyright &copy; 2017
+        </center>
+    </footer>
+</body>
+<html>

@@ -1,0 +1,208 @@
+﻿<!DOCTYPE html>
+<html>
+
+<head>
+    <title></title>
+    <meta http-equiv="content-type" content="text/html;charset=UTF-8" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/font-awesome.min.css" rel="stylesheet" />
+    <link href="https://fonts.googleapis.com/css?family=Bree+Serif" rel="stylesheet">
+    <link href="Content/site.css" rel="stylesheet" />
+    <script src="Scripts/jquery-1.9.1.min.js"></script>
+    <script src="Scripts/bootstrap.min.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menulist" aria-expanded="false">
+                    <span class="sr-only">Menü</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="HomePage.html">My Shop</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="menulist">
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="#">Link 1</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 2</a>
+                    </li>
+                    <li>
+                        <a href="#">Link 3</a>
+                    </li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li>
+                        <a href="register.html">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Kayıt Ol
+                        </a>
+                    </li>
+                    <li>
+                        <a href="login.html">
+                            <span class="glyphicon glyphicon-log-in"></span>&nbsp;Giriş
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-user"></span>&nbsp;Profil
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="myprofile.html">Profil Görüntüle</a>
+                            </li>
+                            <li>
+                                <a href="addresses.html">Adreslerim</a>
+                            </li>
+                            <li>
+                                <a href="orders.html">Siparişlerim</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-shopping-cart"></span>&nbsp;Sepetim
+                            <span class="badge">3</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="product.html">Ürün 1</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Ürün 2</a>
+                            </li>
+                            <li>
+                                <a href="product.html">Ürün 3</a>
+                            </li>
+                            <li class="divider" role="separator"></li>
+                            <li>
+                                <a href="cart.html">Sepete Git</a>
+                            </li>
+                        </ul>
+
+                    </li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="glyphicon glyphicon-envelope"></span>&nbsp;Mesajlar
+                            <span class="badge">2</span>
+                            <span class="caret"></span>
+                        </a>
+
+                        <ul class="dropdown-menu">
+                            <li>
+                                <a href="message.html">Mesaj 1</a>
+                            </li>
+                            <li>
+                                <a href="message.html">Mesaj 2</a>
+                            </li>
+                            <li class="divider" role="separator"></li>
+                            <li>
+                                <a href="messages.html">Mesajlara Git</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="signout.html">
+                            <span class="glyphicon glyphicon-log-out"></span>&nbsp;Çıkış
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <div class="container">
+
+        <div class="row">
+            <div class="col-sm-6 col-sm-offset-3 col-md-4 col-md-offset-4">
+
+                <form>
+                    <div class="panel panel-default shadow">
+                        <div class="panel-heading text-center">
+                            <div class="row">
+                                <div class="col-md-4">
+                                    <h3>
+                                        <span class="fa fa-sign-in fa-3x"></span>
+                                    </h3>
+                                </div>
+                                <div class="col-md-8 text-right">
+                                    <h2>Login</h2>
+                                    <small>Please enter e-mail and password.</small>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="panel-body">
+
+                            <div class="form-group">
+                                <input type="email" name="email" id="email" placeholder="e-mail address" class="form-control" />
+                            </div>
+
+                            <div class="form-group">
+                                <input type="password" name="password" id="password" placeholder="password" class="form-control" />
+                            </div>
+
+                        </div>
+                        <div class="panel-footer text-right">
+                            <a href="ForgotPassword.html" class="btn btn-warning">
+                                <span class="glyphicon glyphicon-asterisk"></span> Forgot Password
+                            </a>
+                            <button type="submit" class="btn btn-success">
+                                <span class="glyphicon glyphicon-log-in"></span> Login
+                            </button>
+
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="well navbar-fixed-bottom">
+        <div class="row">
+
+            <div class="col-md-4 col-md-offset-4 text-center">
+
+                <a href="http://www.facebook.com" target="_blank">
+                    <span class="fa fa-facebook-square fa-2x"></span>
+                </a>
+
+                <a href="http://www.twitter.com" target="_blank">
+                    <span class="fa fa-twitter-square fa-2x"></span>
+                </a>
+
+                <a href="http://www.youtube.com" target="_blank">
+                    <span class="fa fa-youtube-square fa-2x text-danger"></span>
+                </a>
+
+            </div>
+
+            <div class="col-md-6 col-md-offset-3 text-center">
+                <p>
+                    Tüm Hakları Saklıdır.&copy; 2017
+                </p>
+                <p>
+                    <a href="mailto:mail@mailcom" class="btn btn-info btn-sm">E-Posta Gönder</a>
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

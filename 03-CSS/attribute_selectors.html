@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Attribute Selectors</title>
+
+    <style>
+    
+        body{
+            font-size: large;
+        }
+
+        a[target]{
+            text-decoration: none;
+            color:black;
+            border:1px solid darkgrey;
+            padding: 3px;
+            font-weight: bold;
+        }
+
+        a[target="_blank"]{
+            color:yellow;
+        }
+    
+        /* space ile ayrılmış paragraf ifadesi içerenler*/
+        p[title~="paragraf"]{
+            font-weight: bold;
+        }
+
+        ul li[class|="item"]{
+            color:red;
+        }
+
+        ol li[class^="item"]{
+            color:blue;
+        }
+
+        p[class$="para"]{
+            color:green;
+        }
+
+        p[title*="erik"]{
+            color:aqua;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div>
+        <a href="#" target="_blank">Link 1</a>
+        <a href="#" target="_self">Link 2</a>
+        <a href="#" target="_blank">Link 3</a>
+    </div>
+    <hr />
+
+    <div>
+        <p title="paragraf p1">Lorem ipsum dolor sit amet.</p>
+        <p title="paragraf p2">Explicabo, doloremque quisquam. Eius, repellendus?</p>
+        <p title="paraf p3">At vel molestiae quam quod.</p>
+    </div>
+
+    <div>
+        <ul>
+            <li class="textitem">Lorem, ipsum dolor.</li>
+            <li class="item-1">Vitae, nihil id?</li>
+            <li class="item">Vitae, nihil id?</li>
+            <li class="list item-2">Pariatur, repudiandae?</li>
+        </ul>
+    </div>
+
+    <div>
+        <ol>
+            <li class="textitem">Lorem, ipsum dolor.</li>
+            <li class="item1">Vitae, nihil id?</li>
+            <li class="item">Vitae, nihil id?</li>
+            <li class="list item-2">Pariatur, repudiandae?</li>
+        </ol>
+    </div>
+
+    <div>
+        <p class="pp1 para">Lorem ipsum dolor sit amet.</p>
+        <p class="pp2 paraitem">Explicabo, doloremque quisquam. Eius, repellendus?</p>
+        <p class="pp1 itempara">At vel molestiae quam quod.</p>
+    </div>
+
+    <div>
+        <p title="icerik">Lorem ipsum dolor sit amet.</p>
+        <p title="erik">Explicabo, doloremque quisquam. Eius, repellendus?</p>
+        <p title="tterik">At vel molestiae quam quod.</p>
+    </div>
+</body>
+</html>

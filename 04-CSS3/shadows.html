@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>CSS3 Shadows</title>
+
+    <style>
+        .shadowText {
+            text-shadow: 2px 2px 5px rgb(78, 78, 129);
+        }
+
+        .shadowBox{
+            width: 300px;
+            height: 100px;
+            padding: 15px;
+            background-color: rgb(0, 174, 255);
+            box-shadow: 10px 10px 5px grey;
+
+            -webkit-box-shadow: 3px 5px 22px 5px rgba(43,16,43,0.71);
+            -moz-box-shadow: 3px 5px 22px 5px rgba(43,16,43,0.71);
+            box-shadow: 3px 5px 22px 5px rgba(43,16,43,0.71);
+        }
+
+        /* https://www.cssmatic.com/box-shadow */
+    </style>
+
+</head>
+
+<body>
+
+    <h2 class="shadowText">
+        Lorem ipsum dolor sit amet.
+    </h2>
+    <div class="shadowBox">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate, ad dolores veritatis obcaecati totam nulla illum voluptatibus quos suscipit alias rerum! Dicta, ducimus nihil perspiciatis dignissimos.
+    </div>
+
+</body>
+
+</html>
