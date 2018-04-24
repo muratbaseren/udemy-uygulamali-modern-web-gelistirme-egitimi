@@ -1,6 +1,6 @@
-﻿# My project's Readme
+﻿# Uygulamalı Modern Web Geliştirme Eğitimi Hakkında
 
-Udemy üzerinde yayınlanan "Modern Web Geliştirme Eğitimim" yer alan örneklere ait kod ve e-ticaret site tasarımına ulaşabilirsiniz. E-ticaret sitesi görselleri için [tıklayınız..](https://github.com/muratbaseren/Udemy-Uyg-Modern-Web-Gelistirme-Egitimi/tree/master/10-ETicaretSiteImages)
+Udemy üzerinde yayınlanan "Modern Web Geliştirme Eğitimim" yer alan örneklere ait kod ve e-ticaret site tasarımına ulaşabilirsiniz. 
 
 ## İçerik
 
@@ -15,3 +15,9 @@ Udemy üzerinde yayınlanan "Modern Web Geliştirme Eğitimim" yer alan örnekle
 - SQL Eğitim Script'leri
 - E-Ticaret Sitesi Görsel Dosyaları
 - E-Ticaret Sitesi SQL Script ve Backup Dosyaları
+
+## Örnek Proje Ekran Görüntüleri
+
+E-ticaret sitesi görselleri için [tıklayınız..](https://github.com/muratbaseren/Udemy-Uyg-Modern-Web-Gelistirme-Egitimi/tree/master/10-ETicaretSiteImages)
+
+![Shopping Website Sample - Home Page](https://github.com/muratbaseren/Udemy-Uyg-Modern-Web-Gelistirme-Egitimi/blob/master/10-ETicaretSiteImages/01-UdemyETicaretWebSite-HomePage.png?raw=true)
