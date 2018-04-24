@@ -1,6 +1,6 @@
 ﻿# Uygulamalı Modern Web Geliştirme Eğitimi Hakkında
 
-Udemy üzerinde yayınlanan "Modern Web Geliştirme Eğitimim" yer alan örneklere ait kod ve e-ticaret site tasarımına ulaşabilirsiniz. 
+Udemy üzerinde yayınlanan "[Modern Web Geliştirme Eğitimim](https://www.udemy.com/uygulamali-modern-web-gelistirme-egitimi/)" yer alan örneklere ait kod ve e-ticaret site tasarımına ulaşabilirsiniz. Diğer eğitimlerime ve promosyonlu kuponlara [buradan](https://rebrand.ly/udemy-kuponlarim) ulaşabilirsiniz.. 
 
 ## İçerik
 
